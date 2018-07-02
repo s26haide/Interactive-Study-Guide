@@ -1,0 +1,132 @@
+﻿1. What is the simplest method of information output in Java?
+
+A) Scanner
+B) JOptionPane
+C) Print statement
+D) Buffered Readers_
+
+C_
+
+2. When something is printed, the window it is printed on it called the:
+
+A) Console Window/Terminal Window
+B) Output Window/Output Frame
+C) JFrame Window
+D) Applet Window_
+
+A_
+
+3. Which package is the Scanner class contained in?
+
+A) java.io
+B) java.sun
+C) java.util
+D) javax.swing_
+
+C_
+
+4. Which is the proper syntax for importing the entire java.util package?
+
+A) import java.util.Everything;
+B) import java.util.*;
+C) import java.util.All;
+D) import(new Package(java.util));_
+
+B_
+
+5. To create a Scanner object, which of the following is used to allow input from the keyboard?
+
+A) Java.Keyboard
+B) System.out
+C) Input.Typer
+D) System.in_
+
+D_
+
+6. Which of the following is NOT a method of Scanner?
+
+A) next()
+B) nextLine()
+C) nextBoolean()
+D) nextSpace()_
+
+D_
+
+7. JOptionPane and Scanner take input and output on the same window.
+
+A) True
+B) False_
+
+B_
+
+8. Which of the following allows for a more sophisticated looking input?
+
+A) Scanner
+B) Input Class
+C) JOptionPane
+D) PrintIn_
+
+C_
+
+9. JOptionPane.showMessageDialog("Hello Class"); 
+What will this code output?
+
+A) This code will not compile.
+B) The String "Hello World" on the terminal window
+C) The String "Hello World" on a JOptionPane window
+D) The String "Hello World" on the desktop_
+
+A_
+
+10. Why did the previous code not compile?
+Previous code: JOptionPane.showMessageDialog("Hello Class");
+
+A) This code will compile and run properly
+B) showMessageDialog is not a method of JOptionPane
+C) showMessageDialog returns a value that must be saved in a variable
+D) The given parameters do not match that of the showMessageDialog method_
+
+D_
+
+11. Which of the following is NOT a method of JOptionPane?
+
+A) showMesssageDialog
+B) showCloseDialog
+C) showConfirmDialog
+D) showInputDialog_
+
+B_
+
+12. How many buttons are on the window opened by showMessageDialog?
+
+A) 0
+B) 1
+C) 2
+D) 3_
+
+B_
+
+13. How many buttons are on the window opened by showInputDialog?
+
+A) 0
+B) 1
+C) 2
+D) 3_
+
+C_
+
+14. How many buttons are on the window opened by showConfirmDialog?
+
+A) 0
+B) 1
+C) 2
+D) 3_
+
+D_
+
+15. User input is very prone to causing errors because the user can input information wrong.
+
+A) True
+B) False_
+
+A

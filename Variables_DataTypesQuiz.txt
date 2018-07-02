@@ -1,0 +1,178 @@
+﻿1. Each piece of data that is given to Java must be given as a:
+
+A) class
+B) method
+C) variable
+D) number_
+
+C_
+
+2. Java is hard-type because:
+
+A) It is hard to learn
+B) Every variable must have a predetermined type which must be chosen when the variable is declared
+C) Every variable must have a predetermined name which must be chosen when the variable is declared
+D) It has a 10 different variable data types_
+
+B_
+
+3. byte, short, int, and long are:
+
+A) All of the numerical variable types
+B) All of the non-numerical variable types
+C) All capable of holding at least 3 decimal places
+D) Integer data types_
+
+D_
+
+4. Which of the following are capable of holding decimals: Byte, short, int, long, float, double
+
+A) double and long
+B) float and int
+C) float and long
+D) double and float_
+
+D_
+
+5. Byte variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+A_
+
+6. Int variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+C_
+
+7. Float variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+C_
+
+8. Short variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+B_
+
+9. Double variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+D_
+
+10. Long variables take how many bytes of memory?
+
+A) 1
+B) 2
+C) 4
+D) 8_
+
+D_
+
+11. If the number 100342 is to be saved, what data type should used?
+
+A) Float
+B) Double
+C) Int
+D) Long_
+
+C_
+
+12. How many decimal places can a float variable hold?
+
+A) 7
+B) 15
+C) 10
+D) 13_
+
+A_
+
+13. How many decimal places can a boolean variable hold?
+
+A) 15
+B) None
+C) 5
+D) 10_
+
+B_
+
+14. Which of the following are primitive data types?
+
+A) int
+B) String
+C) double
+D) A & C
+E) All of the above_
+
+D_
+
+15. All primitive data types has a corresponding class containing useful methods and variables.
+
+A) True
+B) False_
+
+A_
+
+16. The corresponding class for primitive data types is called a:
+
+A) Primitive Class
+B) Variable Class
+C) Wrapper Class
+D) Parent Class_
+
+C_
+
+17. What is the most efficient way to find the maximum value an int variable can hold?
+
+A) Increment an int variable in an infinite loop until it crashes, then find the value stored in the variable
+B) Search it on google
+C) Integer.MAX(underscore)VALUE
+D) B & C (Mostly C)_
+
+D_
+
+18. Which modifier do we use to make a variable a constant?
+
+A) constant
+B) final
+C) static 
+D) protected_
+
+B_
+
+19. What is a magic number?
+
+A) A number that is used in a line of code where the meaning of the number cannot be determined out of context
+B) A number where the sum of the digits equals the product of the digits
+C) A number that appears on the output screen with no explanation for it
+D) A number that is considered magical; often used to describe the number 42_
+
+A_
+
+20. Why should magic numbers be avoided?
+
+A) They do not accomplish anything in code
+B) They cause the compiler to give a warning
+C) They make reading and understanding code difficult
+D) Magic numbers are fine to use_
+
+C

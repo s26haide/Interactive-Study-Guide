@@ -1,0 +1,26 @@
+﻿Problem Solving
+
+When faced with a problem that needs solving, jumping right into it rarely leads to satisfactory results.
+People usually come up with a plan before they attempt to solve a problem. 
+The Problem Solving Model includes 6 steps that are very useful to figure out the answer to a problem:_
+1.	Identify the Problem
+	What is the problem to be solved?_
+2.	Analyze the Problem
+	What information are we given about the problem?
+	What assumptions can safely be made?
+	What is the person who asked us to solve the problem looking for?
+	What do we need to find out about the problem?_
+3.	Brainstorm Ideas
+	List some possible ideas to solve the problem_
+4.	Prioritize Ideas
+	List the pros and cons of each idea from step 3
+	Choose the best idea you came up with_
+5.	List the steps to be taken following the chosen solution
+	What needs to be done to complete the best idea you chose?_
+6.	Evaluate/Test the solution
+	Complete the solution.
+	Does the solution solve the problem?
+	Does the solution include all of the requirements?
+	If the solution does not include all of the requirements, what is missing?
+	Go back to step 1 with whatever is missing from the solution._
+END_

@@ -1,0 +1,236 @@
+﻿Arrays
+
+In a big project, there are obviously many, many variables that have to be used. 
+For example, a multiple choice quiz might have to save 20 different String variables to store the answer to each question._
+
+In cases like these, handling so many variables individually can get extremely confusing. That is why we have arrays._
+ 
+An array is an object of the Array class that is used to store multiple different variables of similar type. 
+Instead of creating 20 different int variables, we can create a single array of type int with 20 indexes._
+ 
+A very important thing to remember when using arrays is that the first index is always 0. 
+So with the array of integer type data, the 20 indexes are from 0 – 19. To access data inside an array, we use the syntax:_
+
+arrayName[indexNumber]_
+
+Because arrays are objects, they must be created using a statement. The general syntax for this statement would be:_ 
+
+dataType[] arrayName = new dataType[numberOfIndexes]_
+
+So to create an array of integer type with 20 indexes, the statement would be:_
+ 
+int[] numbers = new int[20]_
+
+And the syntax to get the 20th number would be: numbers[19]_
+
+The syntax to get the 11th number would be: numbers[10]_
+
+And so on…_
+
+If the array is numerical, and no values have been put into the indexes, they will automatically contain 0. 
+An array of chars will be initialized to null, and Booleans will automatically initialize to false._
+
+Now that we have an empty array, we need to learn how to put values into the indexes. There are many ways to do this,
+but the simplest method is to manually assign values to the desired index. For example, to store the value 54 in index 4, 
+we would write:_
+
+numbers[4] = 54;_
+
+Remember that even though the index is 4, it is the 5th number in the array because the indexes start at 0._
+ 
+Now that we have the value stored in the index, the index can be used in any place where the number would be used. 
+For example:_
+
+Instead of: System.out.println(“The 4th number in the array is ” + 54);  *This is bad. Remember magic numbers!*_
+
+We could write: System.out.println(“The 4th number in the array is ” + numbers[4]); *This is better*_
+
+Although arrays are very useful, they have to have some kind of shortcoming. For example, after an array has been created, 
+the size of the array cannot be changed. Because the size of an array cannot be changed whenever we want to change it, 
+it is useful to be able to find out the length of an array._
+ 
+Arrays are objects, and as such come from a class. The class for arrays, called Arrays, has an instance variable for the 
+length of the array associated with every array object that is created. To access this variable to find out the length 
+of an array, we use the syntax:_
+
+arrayName.length_
+
+(Note the lack of brackets and parameters. The length of an array is not a method, but a variable)_
+
+So with our example array, we would write: numbers.length_
+
+This would hold the value 20 because the numbers array was constructed with 20 indexes. Because the number of the index 
+starts at 0, the length is always one greater than the last index. This is useful to know because if we want to access 
+the last index of an array we can use:_
+
+numbers[numbers.length-1];_
+
+There is another method of creating arrays called explicit array declaration and initialization. 
+This is a way to declare an array of a specified size and initialize the value in each index all in one statement. 
+The statement to create an array of 5 numbers, 1,2,3,4,5, using this method would look like so:_
+
+int[] nums = {1, 2, 3, 4, 5};_
+
+Note that the “new” keyword is not necessary, and the curly brackets {} are used instead of the square brackets []. 
+The size of the array is not specifically stated, but it is understood that there are 5 numbers to be stored so it is 
+created with a length of 5._
+ 
+Now if we have to print out all of the indexes in an array, it would get tedious to print each index separately. 
+The easier way to do this would be to use a for loop._
+
+To print out all of the indexes in the numbers array with a loop, we could write:_
+
+For(int I = 0; I < numbers.length; i++)
+{
+	System.out.println(numbers[i]);
+} _
+
+The variable I is used to control the number of iterations of the loop as well as the number of the index printed out 
+by the array. This is a very efficient method of printing all of the indexes in an array no matter how large 
+the array is, because the loop will run as long as the length of the array._
+
+We talked about arrays containing many values of the same data type. Another reason why arrays are so useful is that, 
+not only can they hold many primitive data type values, they can also be created to hold many objects of the same type._
+
+If our program requires many objects of the same class to be created, we can create what is called an array of objects. 
+The class that the objects are created from must be the same so the objects all have the same general idea. 
+As long as the objects are made from the same class, they can be saved in a single array._
+
+The data type of the array will be the class that the objects are made from._
+
+For example, if we have many objects of class Things and we want to save them in an array, we must first create the array 
+with the data type of the array set as the class:_
+
+Things[] objArray = new Things[10];_
+
+Of course, we must first create an concrete class called Things in order to create this array of objects, so that is the 
+first step. Then the array can be created using the statement above. Finally, create objects of the class and assign 
+them to indexes in the array._
+
+objArray[0] = new Things();_
+
+Or use the for loop to fill many indexes at once._
+ 
+As we said before, arrays must have some kind of shortcomings despite being so useful. We mentioned that the size of the 
+array cannot be changed but there are many more that we must know about. First of all, arrays can only contain data of a 
+single data type, whether it is primitive or objects. Trying to access an index that lies outside of the array will give 
+an ArrayOutOfBounds error and crash the program. As well as the length of the array not being changeable, there is also 
+the issue of trying to use an empty cell with a method, causing the program to crash because of a null pointer exception._
+ 
+What if there was something similar to arrays but at the same time, eliminates these problems that arrays have. 
+There is actually, and they are called Array Lists._
+ 
+Array Lists do not allow empty cell errors because of the way they operate, they have methods that allow for the 
+management of the data stored in the Array List, and they can become smaller or larger depending on the amount of 
+data they need to hold._
+ 
+Just like arrays, Array Lists are also objects. The class that they are made from is the ArrayList class. In order to use 
+an Array List in your program, you must first import the ArrayList class. This is just like importing the Scanner class 
+for user input._
+ 
+At the very top of the program, even above the class, import the class by typing:_
+
+import java.util.ArrayList;_
+
+After importing the class, we must create the Array List object. The statement to do this looks like so:_
+
+ArrayList <DataType> ArrayListName = new ArrayList <DataType>()_
+
+Something to know about Array Lists is that they cannot directly hold primitive data types. You cannot have an Array List 
+that contains int variables, but you can have an Array List that contains object of the Integer class 
+(Remember Wrapper Classes!!!). In the case of creating an ArrayList of Integer type, the statement would look like this:_
+
+ArrayList<Integer> numbers = new ArrayList<Integer>();_
+
+Notice that we are not required to specify the size of our Array List because it automatically changes sizes 
+depending on the amount of data we add to it._
+ 
+Recall that we mentioned the ArrayList class has methods to help with the management of the data inside of the Array List. 
+The first of this method we will discuss is the add method._
+ 
+The add method requires a parameter that is the same data type as the Array List. This will add the Object in the
+parameter to the end of the Array List._
+
+For example, our numbers ArrayList is currently empty, but we want to add an Integer object that holds the number 17 in it.
+We can either create the Integer object first, then add it to the Array List or we can do both in a single statement._
+
+Integer num = new Integer(17);
+numbers.add(num);_
+
+OR_
+
+numbers.add(new Integer(17));_
+
+*Both of these statements complete the same objective, so use whichever one makes sense to you.*_ 
+
+The Integer object num has been added to the end of the ArrayList numbers. Because the ArrayList was empty before, the number
+is added to the first index, or index 0.
+
+What if there are already multiple objects in the ArrayList and we want to add an object somewhere in the middle? To do this,
+we must move all of the objects in indexes after the insertion spot down to make space for the new object. This would take a
+lot of work, so there is a way to do this easily with ArrayList as well._
+
+Remember method overloading, where two methods that have similar functions have the same name but different parameters? This
+is another example of overloading. The method to add in the middle of an ArrayList is also called add, but it has different 
+parameters than the previous add method._
+
+This add method has the parameters(int index, Object obj)_
+
+Put the number of the index you want to add the object, and the object that you want to add as the parameters for the add
+method and it will add the object in the index you specified. It will also shift all of the objects down to make room for the
+insertion._
+
+For example:_
+
+numbers.add(3, new Integer(17));_
+
+This will add the number 17 into the 3rd index of the ArrayList and move the objects in the ArrayList to make space for it._
+
+The next ArrayList method to cover is set(int index, Object obj). The parameters are the same as the inserting add method,
+but the function of the methods are very different. Instead of inserting the object in the specified index 
+and shifting all of the other objects down, the set method will overwrite the object in the specified index with the object
+in the parameters. It will completely change the object, while the other objects in the ArrayList are unchanged._
+
+For example:_
+
+numbers.set(2, new Integer(5));_
+
+This will change the number previously in the second index to 5. The other numbers and their positions are unaffected._
+
+The next method is the remove method. The remove method only has a single parameter, an int variable. The parameter 
+refers to an index in the ArrayList. The remove method will delete the object in the specified index and pack all of the 
+indexes together to get rid of the empty space in the ArrayList. 
+
+For example:_
+
+numbers.remove(2);_
+
+This will remove the number in the second index and move all of the other numbers to fill the space left by the deleted
+number._
+
+The next method of ArrayList we will cover is the get method. Note the method is called "get" and so it is most likely an
+accessor that will return a value. The get method also has only a single parameter, again an integer. This is used to 
+retrieve a value that is saved inside an index in the ArrayList._
+
+For example, to get the value saved in the 4th index, we use:_
+
+numbers[4] for arrays_
+
+numbers.get(4) for ArrayLists_
+
+The value and position of the variables inside the indexes are unchanged after using this method. It is solely for returning 
+a saved value.
+
+The last method we will learn is the size method. The size method has no parameters and is similar to the length variable
+for arrays. 
+
+To get the length of an array:_
+
+numbers.length; //No brackets because length is a variable for arrays_
+
+numbers.size(); //Brackets because size is a method for ArrayLists_
+
+A handy tip for working with ArrayLists: just as we used the length of an array to control a for loop, we can also use the 
+value returned by the size method of an ArrayList to loop throughout the entire ArrayList.
+
+END_

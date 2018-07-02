@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=GUI
+comment0.text=\r\n\ Author\:\ Sakin\ Haider\r\n\ Due\ Date\:\ May\ 26\r\n\ Purpose\:\ Class\ for\ the\ GUI\ of\ the\ program\r\n\ RUN\ THIS\ CLASS\ TO\ START\ THE\ PROGRAM\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ method\ of\ the\ GUI\ class\r\n\ Creates\ all\ of\ the\ necessary\ objects\r\n\ Adds\ all\ of\ the\ buttons\ to\ their\ respective\ panel\r\n\ Adds\ the\ panel\ to\ the\ respective\ frame\r\n\ Throws\ FileNotFoundException\ for\ the\ fileScan\ Scanner\ reading\ the\ button\ labels\r\n\ \r\n
+numComments=2

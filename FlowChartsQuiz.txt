@@ -1,0 +1,107 @@
+﻿1. A flow chart is a diagram that
+
+A) Shows the flow of the program with symbols, boxes, text, and arrows
+B) Is similar to pseudocode except it is more detailed and visual
+C) Shows the many paths a program can take, showing very possible situation that the program must deal with
+D) All of the above_
+
+D_
+
+2. The 3 basic symbols used in a flow chart are
+
+A) Rounded rectangles, parallelograms, and rectangles
+B) Ovals, triangles and circles
+C) Triangles, squares, and diamonds
+D) Diamonds, circles, ovals_
+
+A_
+
+3. The rounded rectangle indicates
+
+A) Input/Output operations
+B) Terminals of the program
+C) Processes
+D) Iteration_
+
+B_
+
+4. The parallelogram indicates
+
+A) Input/Output operations
+B) Terminals of the program
+C) Processes
+D) Iteration_
+
+A_
+
+5. The rectangle indicates
+
+A) Input/Output operations
+B) Terminals of the program
+C) Processes
+D) Iteration_
+
+C_
+
+6. Which of the following are possible structures of a flow chart?
+
+A) Sequence
+B) Case
+C) A & B
+D) Flow structure_
+
+C_
+
+7. Sequence is:
+
+A) When there are multiple possible actions the program can take
+B) A series of actions that occurs in order
+C) A part of the program that will repeat
+D) Very similar to the decision structure_
+
+B_
+
+8. Decision is:
+
+A) When there are multiple possible actions the program can take
+B) A series of actions that occurs in order
+C) A part of the program that will repeat
+D) Very similar to the repetition structure_
+
+A_
+
+9. Repetition is:
+
+A) When there are multiple possible actions the program can take
+B) A series of actions that occurs in order
+C) A part of the program that will repeat
+D) Very similar to the sequence structure_
+
+C_
+
+10. What do you use if the flow chart is too large and goes to the next page?
+
+A) Module
+B) Large, bold arrow
+C) Write: To next page
+D) Connectors_
+
+D_
+
+11. When are modules used in flow charts?
+
+A) To show the terminals of the flow chart
+B) To show a computer function or process done in a method
+C) To show that the flow chart goes to the next page
+D) To show multiple structures of flow charts all combined into a single structure_
+
+B_
+
+12. Which describes the symbol for a module?
+
+A) A circle with 2 lines through it, vertically
+B) A triangle with 2 lines through it, vertically
+C) A trapezoid with 2 lines through it, vertically
+D) A rectangle with 2 lines through it, vertically_
+
+D

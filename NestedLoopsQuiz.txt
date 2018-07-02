@@ -1,0 +1,56 @@
+﻿1. A loop inside of a loop is called a:
+
+A) loop-loop
+B) loop-in-loop
+C) A & B
+D) Nested loop_
+
+D_
+
+2. Which loop types can be inside of a nested loop?
+
+A) All of them
+B) None of them
+C) Only for loops
+D) While and do-while loops_
+
+A_
+
+3. Every time the outer loop runs once, the inner loops runs once.
+
+A) True
+B) False_
+
+B_
+
+4. How many times is "Hello" printed in the following code?
+for(int i = 0; i < 3; i++)
+{
+	for(int j = 0; j < 5; j++)
+	{
+		System.out.println("Hello");
+	}
+}
+
+A) 3
+B) 5
+C) 0
+D) 15_
+
+D_
+
+5. How many times is "Computer Science Rocks" printed in the following code?
+for(int i = 0; i < 15; i--)
+{
+	for(int j = 0; j < 10; j++)
+	{
+		System.out.println("Computer Science Rocks");
+	}
+}
+
+A) 30
+B) 50
+C) Infinite
+D) 150_
+
+C_

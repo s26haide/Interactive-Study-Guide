@@ -1,0 +1,213 @@
+﻿Decision-Making & Iterations
+
+Decision-making in programs is very important. There are many cases in which it is possible to use
+these, and almost every large program will incorporate decision-making in some way._
+ 
+The program can check a condition, make a decision based on the condition and take actions 
+specified for the decision made. For example, if you want to print “hi” to people whose age is 
+less than 20, but “hello” to people whose age is greater than 20, you can do this using 
+decision-making._
+
+The 3 parts of decision-making are: The condition, the body, and the else body. 
+In the example given before, the condition would be age is less than 20. The body will state that 
+if this is true, print “Hi”. The else body will state that if this is not true 
+(if age is greater than 20), then print “Hello”._
+
+When this is run in a program, the computer will check the value of a variable holding the age 
+of a person, check the condition, and run the correct body depending on the decision made._
+ 
+The body and else body can often be switched depending on the condition. For example, if we 
+changed the condition to be if age is greater than 20, the body and the else body would be switched.
+Both methods will have the same result, so you can use whichever you prefer._
+
+An else body is not necessary for decision-making. In the previous example, 
+removing the else body would remove the print “Hello”. So the computer will check if age is 
+less than 20 and if this is true, it will print “Hi”. If this is not true, the program has no 
+code to handle this case so it will skip without doing anything. 
+The code will continue to run as normal after skipping the non-existent else body._
+ 
+Also recall that an if-statement can have more than 1 if condition. By using “else if”, you can have
+more than 1 if condition. This is used like so:_
+
+If(condition)
+	//Statements according to this condition\\
+else if(another condition)
+	//Statements according to this condition\\
+else
+	//Statements for else\\_
+
+Remember that you can have as many else-if conditions as you need. However, you can only 
+have a single if and a single else._
+ 
+Another feature of if/else-if/else statements is nested if statements. This means that an 
+if statement will be nested inside another if statement. This means that the nested 
+if statement will only occur if the first if statement is true. There could be another 
+if statement inside the nested if statement, continuing on for as long as you need. Just remember 
+that the outside if statement must be true for the inside if statement to run._
+ 
+The basic structure of nested if’s looks like this:_
+
+if(condition1)
+	if(condition2)//Will only run if condition1 is true
+		//Statements for condition 2\\
+	Else
+		//Statements for if condition 2 is false\\
+Else
+	//Statements for if condition 1 is false\\_
+
+Because of how nested if statements work, they are often used to make checklists of some sort. 
+You can start with general conditions like is someone a male, then if this is true, you can have 
+another condition like are they 16 years old or greater, then if this is true, you can get more 
+and more specific about the conditions as they continue to prove the conditions true._
+
+Logical operators are used in decision-making statements. Logical operators take 2 values, 
+compare them based on the operator used, and return a true or false value. There are many 
+logical operators available for our use in decision-making:_
+
+Less than (<) 
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equal to (>=)
+Equal to (==) *Pay Attention to this one*
+Not equal to (!=)_
+
+Using 1 equal sign (=) means an assignment operation. Using 2 equal signs (==) means a logical 
+operator. This is important to know as using the wrong one can lead to incorrect code, often 
+yielding unexpected or unwanted results._
+ 
+There are also conditional operators in decision-making. Conditional operators allow for more 
+than one condition to be checked. Expanding on the example from before, we want to print 
+“Hi” to people whose age is less than 20 and they must be male. In order to do this, we must 
+check both conditions (age < 20 and gender == male)._
+
+In order to do this, we need the conditional operator that means “and”. The syntax for this is &&.
+There is also the conditional operator that means “or”. The syntax for this is ||. There is also 
+the “not” operator mentioned before. Using “!” before a logical operator means “not”._
+
+Note that it must be put before the logical operator. For example, != means not equal, 
+!< means not less than, etc._
+ 
+In addition to if/else-if/else statements, there is another method of decision-making. 
+This is called a switch statement. If you find yourself in a situation where you have 
+greater than 3 else-if statements, you may want to consider using a switch statement. 
+Of course, you can continue to use else-if statements if you prefer to, but switch may be more 
+efficient._
+ 
+If you want to use a switch statement to assign a % mark depending on the grade letter entered, 
+this would be done like so:_
+
+char grade = …; //Take in a letter with Scanner. Actual code is omitted for this part
+switch(grade)
+{
+	case ‘A’: //Statements for if grade is ‘A’
+	break;
+	case ‘B’: //Statements for if grade is ‘B’
+	break;
+	case ‘C’: //Statements for if grade is ‘C’
+	break;
+	//ETC.
+	default: //Statements for if grade is not found
+}_
+
+The program searches every case to find which one matches the condition given to the switch 
+statement. Notice the “break;” after every case._
+
+This is done to exit the switch after the correct case is found. If the break is not added, 
+after the case is found, the computer will proceed to continue completing the action of every 
+case after that, until it reaches a break or default._
+
+Without the break, the switch will not work as you expect it to, so it is important 
+to add the break after every case._
+ 
+The default case is similar to an else in an if/else-if/else statement. If the computer 
+cannot find the corresponding case to the condition, it will continue to the default case, 
+just like if the condition is not met in an if statement, it will go to the else statement._
+ 
+Another thing to note about switch statements is that && and || cannot be used in switch statements._ 
+
+
+Iterations
+
+Iterations are also known as repetition statements or loops. They are controlled by Boolean values,
+just like decision-making statements. There are 3 different kinds of loops available in Java 
+and the programmer must choose the correct type. There are:_
+
+While loops, do-while loops, and for loops._
+
+The syntax for while loops looks like so:_
+
+while(condition)
+{
+	statements;
+}_
+
+While is a reserved word in java that indicates the type of the loop being used. The program 
+will enter the loop if the condition is true. If the program enters the loop, the statements 
+are executed. After all of the conditions are executed, the program checks the condition again. 
+This is repeated until the condition is false, so the program will not enter the loop and 
+continue through the rest of the program._
+
+Note that if the condition is initially false, the statements inside the loop never execute. 
+This means that the while loop will repeat either 0 or more times._
+ 
+There should always be a statement inside the loop that causes some kind of change to the condition.
+For example if the condition is (int I > 10), there should be a statement inside the loop that 
+changes the value of the variable. By doing this, the condition will eventually be false._
+
+If there are no statements changing the condition, the loop will run forever, until you manually 
+stop it. This is called an infinite loop and is a common mistake. Always make sure that you have 
+statements to prevent an infinite loop._
+ 
+Do-while loops are similar to while loops except that they are guaranteed to run at least once. 
+Do-while loops run exactly how the name describes. It does the statements first then checks the 
+condition later. By doing so, a do-while loop is guaranteed to run at least once, whereas while 
+loops do not run at all if the condition is initially false._
+
+Do-while loops are written like so:_
+
+do
+{
+	Statements;
+}
+While(condition);_
+
+The final type of loop is the for loop. “for” is a reserved word that indicates the start of a 
+for loop. There are 3 different parameters that can be used in the header of the loop. Not all 
+have to be used, but usually they are. The syntax of the for loop looks like so:_
+
+For(initialization; condition; increment)
+{
+	Statements;
+}_
+
+Initialization is used to either initialize a new variable with a value or an existing variable 
+can be assigned a value. Then the condition is written, and finally the incrementing. 
+It can also be written with a decrementing value if you want the number to go downwards._
+
+Example:_
+
+for(int I = 0; I < 10; i++)
+{
+	Statements;
+}_
+
+This initializes the int variable with a value of 0, the condition is that I is less than 10, 
+and the value of I will increment every iteration of the loop._
+
+The initialization statement only occurs once at the beginning of the loop, so you do not 
+have to worry about the variable being assigned a value of 0 every time._
+ 
+After the variable is initialized, the condition is checked. If the condition is true, 
+the statements run and then finally the variable is increased by 1 at the end of the loop._
+
+For loops are useful in situations where you know exactly how many times you want the loop to run. 
+In the previous example, the loop runs 10 times, from 0 – 9._
+
+Any one of the 3 parts can be left out and the for loop will still run. 
+If the initialization is left out, there will be no variable initialized to control the iterations 
+of the loop. If the condition is left out, it is assumed to be true and creates an infinite loop. 
+If the increment is left out, the variable will not be incremented, often leading to infinite loops._
+
+Each part of the parameter must be separated by a semicolon (;)._
+
+END_

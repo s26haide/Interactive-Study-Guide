@@ -1,0 +1,230 @@
+﻿1. Decision-making is not used very often and it is acceptable to not know how to do it.
+
+A) True
+B) False_
+
+B_
+
+2. Decision-making allows the computer to run specific code when the condition is true.
+
+A) True
+B) False_
+
+A_
+
+3. There are "    " parts of decision making:
+
+A) 2; The condition and the body
+B) 4; The condition, the decision, the body, and the else body 
+C) 3; The condition, the body, and the else body
+D) 1; The condition_
+
+C_
+
+4. Depending on the condition, the statements in the body and the else body can often be swapped.
+
+A) True
+B) False_
+
+A_
+
+5. An else body is necessary in every decision-making code.
+
+A) True
+B) False_
+
+B_
+
+6. If there is no else body and the condition is false, the program will:
+
+A) Crash
+B) Infinite decision making until the condition becomes true
+C) Alert the user that the decision-making segment was skipped but continue to run
+D) Continue to run as normal as if there was no decision-making segment_
+
+D_
+
+7. A block of decision-making code can have: "   " if statement; "    " else if statements; "   " else statements
+
+A) 1;5;1;
+B) 3;2;3;
+C) 1;infinite;1;
+D) 1;infinite;3;_
+
+C_
+
+8. An if-statement containing another if-statement is called a:
+
+A) nested if
+B) if-if
+C) if-in-if
+D) All of the above_
+
+A_
+
+9. In a nested if, the inside if-statement will always be checked, regardless of the outside if-statement.
+
+A) True
+B) False_
+
+B_
+
+10. Because of the way nested ifs are structured, they are often used to make:
+
+A) Quizzes
+B) Games
+C) Graphics
+D) Checklists_
+
+D_
+
+11. Logical operators return a(n): 
+
+A) Boolean value
+B) String value
+C) Int value
+D) Char value_
+
+A_
+
+12. Which of the following are NOT logical operators?
+
+A) >
+B) <=
+C) =
+D) None of the above_
+
+C_
+
+13. What will the following code output?
+boolean boo = false;
+if(boo = true)
+{
+   System.out.println("Hello");
+}
+else
+{
+   System.out.println("Hi");
+}
+
+A) Hello
+B) Hi_
+
+A
+Notice that "=" was used in the if-statement instead of "==". This means that the value true was assigned to
+boo instead of checking if boo was true, and therefore it will print Hello and not Hi. 
+Watch out for mistakes like this._
+
+14. In addition to logical operators, there are also conditional operators. Which of the following is a 
+conditional operator?
+
+A) <=
+B) <<
+C) ||
+D) |&|_
+
+C_
+
+15. Which of these is another form of decision-making?
+
+A) logical statements
+B) switch statements
+C) conditional statements
+D) resolution statements_
+
+B_
+
+16. What should you put after every case in a switch statement?
+
+A) A break statement
+B) A return statement
+C) A print statement
+D) A System.exit(0) call_
+
+A_
+
+17. Conditional operators can be used in switch statements. 
+
+A) True
+B) False_
+
+B_
+
+18. Iterations are also known as:
+
+A) decision-making statements
+B) Repetition statements
+C) Loops
+D) B & C_
+
+D_
+
+19. Iterations are controlled by:
+
+A) Double values
+B) Int values
+C) Boolean values
+D) Char values_
+
+C_
+
+20. How many different types of loops are available for use in Java?
+
+A) 3
+B) 2
+C) 5
+D) 4_
+
+A_
+
+21. Which of the loops must run at least once?
+
+A) While
+B) Do-While
+C) For
+D) All of the above_
+
+B_
+
+22. If the condition of a loop is unreachable, the loop is called an:
+
+A) Unstoppable loop
+B) Boundless loop
+C) Infinite loop
+D) Interminable loop_
+
+C_
+
+23. The difference between a while and a do-while loop is:
+
+A) There is no difference
+B) The loops are completely different and not similar whatsoever
+C) The while loop will always run at least once
+D) The do-while loop will always run at least once_
+
+D_
+
+24. Which of the following are parts of the header for a for loop?
+
+A) Initialization
+B) Condition
+C) Increment
+D) All of the above_
+
+D_
+
+25. How many times will "Hello" print?
+
+for(int i = 10; i < 0; i--)
+{
+	System.out.println("Hello");
+}
+
+A) 0
+B) 10
+C) 9
+D) 11_
+
+A
+Note that the condition is that i < 0, not i > 0. Therefore, the condition is never true and "Hello" is
+never printed. Using the wrong logical operator can cause problems, so be careful to use the right one.

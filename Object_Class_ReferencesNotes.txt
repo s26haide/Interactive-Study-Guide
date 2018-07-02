@@ -1,0 +1,84 @@
+﻿Object and Class References
+
+Remember that when we create an object, we assign it a name. This is called a reference variable. 
+Also recall that the reference variable simply points to the space in the computer’s memory 
+where the object is stored, not the actual object itself. You can think of reference variables 
+as “pointers”._
+ 
+You may have seen an error called null reference. This occurs when a reference variable has been 
+created but does not currently point to any specific object. For example, if we write:_
+
+ChessPiece bishop;_
+
+The reference variable bishop is created but it does not point to an object until we finish 
+the object creation statement: bishop = new ChessPiece();_
+
+Now that we know about null references, we can learn more about the use of the reserved word null. 
+Null can be used to specifically set the value of a variable to null, or to check if a 
+reference is a null reference. These are done like so:_
+
+bishop = null; //Setting the value of a variable to null_
+
+if(bishop == null) //Checking if a reference variable is a null reference_
+ 
+Checking for null references is useful because attempting to use a null reference will cause 
+a NullPointerException and cause the program to crash. Usually the compiler will check if a 
+local variable is used without being initialized but instance variables are automatically 
+set to null._
+ 
+Another possible way to refer to an object is the reserved word “this”. The “this” reference 
+allows an object to refer to itself. This means that if the “this” reference is used inside a 
+method, it will refer to the object through which the method was invoked._
+ 
+For example, if we have 2 objects, object 1 and object 2, and a method called doSomething() 
+where the “this” reference is used, the method can be called through both objects:_
+
+object1.doSomething() //”this” will refer to object1 inside the method_
+
+object2.doSomething()//”this” will refer to object2 inside the method_
+
+Now we must review how assignment statements differ between primitive data types and object 
+references._
+ 
+For primitive types:_
+
+int num = 10; //num has a value of 10_
+
+int num2 = 20;//num2 has a value of 20_
+
+num2 = num1;  //num1 and num2 both have a value of 10_
+
+For object references:_
+
+bishop1 = new ChessPiece(); //bishop1 points to memory location 123 (a separate object)_
+
+bishop2 = new ChessPiece(); //bishop2 points to memory location 456 (a separate object)_
+
+bishop2 = bishop1;          //both variables point to memory location 123 (the same object)_
+
+*Note that bishop1 and bishop2 both point to the same location in memory. They are called aliases
+of each other*_
+
+Aliases can be very useful but must also be used very carefully. Because 2 references point 
+to the same object, if a value of the object is changed using one of the variables, 
+it will change the value of the object for every variable referring to it._
+ 
+Just as we checked if object references were null before, we can do something similar to 
+check if 2 object references are aliases or not._
+ 
+If(bishop1 == bishop2) //Will return true if they are aliases, false if not_
+
+Also know that every single object automatically has a method called equals(Object obj), 
+but unless we rewrite the method ourselves, it has the same function as the “==” operator._
+The equals method would be used like so:_
+
+If(bishop1.equals(bishop2))//Will return true if they are aliases. The condition can be changed 
+by you._
+
+The equals method had an Object as the parameter. When objects are used as parameters in Java, 
+a copy of the actual parameter is stored in a formal parameter, making the 2 parameters aliases._
+
+In this way, passing objects as parameters is similar to an assignment statement. 
+Because of this, Java methods are called passed by value._ 
+
+END_

@@ -1,0 +1,402 @@
+﻿Problem Solving
+
+When faced with a problem that needs solving, jumping right into it rarely leads to satisfactory results.
+People usually come up with a plan before they attempt to solve a problem. 
+The Problem Solving Model includes 6 steps that are very useful to figure out the answer to a problem:_
+1.	Identify the Problem
+	What is the problem to be solved?_
+2.	Analyze the Problem
+	What information are we given about the problem?
+	What assumptions can safely be made?
+	What is the person who asked us to solve the problem looking for?
+	What do we need to find out about the problem?_
+3.	Brainstorm Ideas
+	List some possible ideas to solve the problem_
+4.	Prioritize Ideas
+	List the pros and cons of each idea from step 3
+	Choose the best idea you came up with_
+5.	List the steps to be taken following the chosen solution
+	What needs to be done to complete the best idea you chose?_
+6.	Evaluate/Test the solution
+	Complete the solution.
+	Does the solution solve the problem?
+	Does the solution include all of the requirements?
+	If the solution does not include all of the requirements, what is missing?
+	Go back to step 1 with whatever is missing from the solution._
+END_
+
+Pseudo-code
+
+Pseudo- means imitation, code refers to the actual computer code. Therefore, pseudo-code means an imitation of computer code.
+Pseudo-code is computer code that has been translated into English to show how the program should function._
+For example, if pseudo-code is to be written for checking which of 2 numbers is greater, it would look like this:_
+If(A>B)
+	THEN Print “A is greater”;
+	ELSE Print “B is greater”;
+ENDIF ;_
+By using pseudo-code, we are able to figure out how the program should work before we add all of the confusing code to it. 
+It is a basic outline for how our program will work._ 
+Iteration, also known as loops, can also be written in pseudo-code like so:_
+While(condition)
+	DO <Statements if condition is true>;
+ENDWHILE;_
+Always write a pseudo-code before you start coding any project so you will have a clear idea of what you need to do.
+If you get confused or lost while writing your code, refer to your pseudo-code to see what needs to be done and get back on track.
+
+END_
+
+Flow Charts
+
+A flow chart is a diagram that contains symbols, boxes and text all connected by arrows to show the “flow” of the program. It is very similar to pseudo-code except is a bit more detailed. Flow charts show the many paths a program can take, showing every possible situation that the program must deal with. There are 3 different symbols used in flow charts: rounded rectangles, parallelograms, and rectangles.
+The rounded rectangle indicates the terminals of the program. It is used to show the start and the end of the program. They look somewhat like this: 
+The parallelograms are used to indicate any Input/Output operations. If the program needs to output any information to the user, for example, asking a question, or needs to take input from the user, for example, taking the answer of a question, the parallelogram is used. It looks like this:  
+The last symbol used is the normal rectangle. The rectangle indicates a process. If the computer must do a mathematical process or must assign a value to a variable, the rectangle is used. Rectangles look like this: 
+There is usually text inside each of these symbols that explains what is happening in the code. 
+There are 4 different possible structures of a flow chart: Sequence, Decision, Repetition, and Case. 
+Sequence is a series of actions that occurs in order. The flow chart will show sequence with basic arrows between each symbol, starting at the top and ending at the bottom.
+Decision is when there are multiple possible actions the program can take, but will choose one depending on whether a condition is met. A new symbol is used to show decision. A diamond shape will contain a yes/no question, and depending on the answer to the question, either a yes path will be taken or a no path will be taken. It is no necessary for both a yes or no path to exist. It is possible to only have either a yes or no path, and if a path does not exist, the program will continue without doing anything.  The diamond looks like this: 
+Repetition is used to show a part of the program that will repeat. This is also known as a loop. The diamond symbol is used to ask a yes/no question, and depending on the answer to the question, the program can enter the loop. If the condition is not met, the program will enter the loop and go to a rectangle, to show a function. After the function, the diagram shows an arrow back to the diamond to ask the question again. This will continue to loop until the condition in the diamond is met and the program will continue instead of entering the loop again. 
+Case structure is very similar to the decision structure. A diamond is used to ask a question, except instead of only a yes or no question, the question can have multiple answers. Each answer will lead to a different function, so it looks similar to the decision structure only with more than 2 possible paths the program can take. 
+As flow charts can get very long depending on the program, it is necessary to know about connectors. A connector is used when a flow chart does not fit on a single page and must continue to the next page. A connector is represented by a circle: 
+The final thing to learn about flow charts is modules. In computer programming, a computer function is often done in a method. If you want to show that a method is called in a flow chart, there is a special symbol for it. A separate flowchart can be made to explain the function of the method used in a module is necessary. The symbol for a module looks like this: 
+Of course, the different structures of flow charts can be combined. This is usually the case for actual programs. For example: A decision can lead to a loop that continues on to a sequence that goes to another decision, etc. 
+
+END_
+
+Introduction to Java
+
+Java is a very popular coding language because it is simple to learn and use. Because of this, it is often used as a gateway to computer programming. Although it is not the most practical language, people can learn the basics with Java and later move on to more complicated languages as their understanding of computer programming deepens. 
+Java is also platform-independent, meaning that if you write the code on a windows computer, you can still run it on an apple computer. If the code is written on an apple computer, it can still be run on a Linux computer. The platform of the computer does not interfere with Java code, so it is platform-independent. 
+Everything in Java must be in a container. Containers must go from large – small. Smaller containers must be inside larger containers. 
+The largest container in Java is the class. A class usually is used to describe a complete concept, for example, a student, an airplane, a car, etc. Classes have 2 parts: A header that names the class, and the body that is the container part of the class. The body of the class contains all of the smaller containers. The name of the class should always be capitalized to tell people that it is a class and the largest container.
+The medium-sized container in Java is the method.  A method holds a collection of statements that performs a process. Method names should describe what the method does, usually verbs because an action is being done. As methods are smaller than classes, they should go inside a class.
+There is a special method in Java called the main method. The main method is the method that Java looks for to know what to do with a program. Every Java project can only have one main method, and the main method can call other methods inside of it. The syntax for the main method is: public static void main (String []args) 
+Statements are the smallest container in Java. Statements go inside of methods. A statement will give a complete command. A statement can tell other classes and methods what to do but must specify what the statement is talking about with references. A statement will always end with a semicolon (;). 
+Statements are the smallest container and go inside a method, which is the medium-sized container. Methods go inside classes which are the largest container. When all of these containers are used properly, the result is a Java code. 
+Comments are also used in Java code, but have no actual effects on the code itself. Comments are written beside important statements, at the top of methods, and at the top of classes to explain what these statements, methods, or classes do. Comments help people understand what the code you have written does. Comments are not read by the computer, they are written for other people to read. 
+Type “//” to indicate the start of a comment on a single line. Anything written after the “//” on the same line will be a comment. This can be used to give information to anyone reading the program or can also be used to temporarily disable a line of code without deleting it. For example, “//System.out.println()” will not run because the code is written in a comment.
+If the comment you want to write will take multiple lines, it is inefficient to type “//” on multiple lines. That is why multi-line comments exist. To write a multi-line comment, type “/* */”. The computer will automatically create multiple lines of comments that you can type in. It will automatically add as many lines as you need. Use this at the top of methods to explain what the method does or at the top of a class to give your name, project, date, and what the class does. 
+
+END_
+
+Variables and Data Types
+
+Each piece of data that is given to Java must be given as a variable. Variables are a space in the computer’s memory that is given a name so we can access it. Java is hard-type: every variable must have a predetermined type and the type must be chosen when the variable is declared. Selecting the correct type for every situation is important as it saves space in memory and makes the program more robust. 
+Numerical variable types: byte, short, int, long, float, double. 
+byte, short, int, and long are integer data types. This means that they cannot hold decimals. float and double are real number variables, meaning they can hold decimals.
+Byte variables take 1 byte of memory. A byte variable can hold any number between -128 to 127. Byte is not often used as the range of the data makes its use risky. If the number goes above 127 or below -128, it causes problems in the program. 
+Short variables take 2 bytes of memory. A short variable can hold any number between -32768 and 32767. Short variables are also not used very often. 
+Int variables are the most common type of integer variables and take 4 bytes of memory. An int variable can hold any integer number between -2,147,483,648 and 2,147,483,647. Int variables are the most common because they do not take much memory space, only 4 bytes, but have a range that can hold almost any number that is being used for practical purposes. 
+In the rare case that an integer value that is too large for an int variable to hold is necessary, there is the long variable. A long variable takes 8 bytes of space in memory and can hold any integer number with a value between -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. This range allows for almost any integer number to fit into a long variable, but in the extremely rare case that it does not, there are other ways to store a number like that, although it is technically not a variable. 
+These variables are integer variables and cannot hold any number that contains a decimal. For a number containing a decimal, either float or double must be used. 
+Float variables need 4 bytes of space in memory and allow an accuracy of 7 decimal places. Double variables need 8 bytes of space in memory and allow for an accuracy of 15 decimal places. The range for float variables is +- 3.40282347 * 10¬¬38, while the range for double variables is +- 1.79769313486231570 * 10308. Double is more commonly used than float because it allows for more precision in regards to the decimal places, but float can also be used for less precise numbers. 
+All of these data types: byte, short, int, long, float, and double are all primitive data types. Primitive variables start with lower case letters. Each primitive variable type also has a corresponding class that has the same name but with a capital letter. This class contains useful methods and variables that make working with these primitive variables easier. 
+For example, Double and double are different. Integer and int are different. The ones that start with a capital letter are wrapper classes and the lower case ones are data types. Don’t make this mistake while writing code! 
+The wrapper class for every primitive numerical variable has a variable that already has a set value. These are called predefined constants. For example, the maximum and minimum value for every variable can found using the predefined constant MAX_VALUE and MIN_VALUE respectively. 
+For example, to find the maximum value for a double variable, you could use Double.MAX_VALUE. Capital “D” on Double to use the wrapper class and not the variable type. 
+Constants do not have to be predefined. You can create your own constant variables to use in your own code. For example, if your code uses HST, the value of HST will not change. Therefore, you can use a constant variable by declaring it like this: public final double HST_AMOUNT = 0.13;
+The variable should be declared with the word final to make it a constant variable. That means that the value assigned to the variable when it is created (in this case, 0.13) cannot be changed later in the program. The variable name should be in all caps so that someone who is reading the code will know that the variable is constant and a “_” should be used to separate words.
+There are other variable types that are not numerical. For example, there is the Boolean variable and the char variable. Boolean variables contain either true or false as their value and char contains only one character, for example ‘a’ or ‘*’.  
+When someone is reading your code, they should be able to get a decent understanding of what is happening on a single line of code simply by looking at that single line. Something that makes this difficult is magic numbers. 
+Magic numbers are numbers whose meaning cannot be understood out of context. Using the previous example, calculating tax, if the number 0.13 is used in a calculation, someone may not understand what that number means (if their tax% is different for example), so instead of using 0.13, whose meaning cannot be determined out of context, use a variable called HST containing the number 0.13.
+The use of magic numbers makes your code difficult to understand and thus, should always be avoided where possible. There are times when using a number might be acceptable, but this is very rare. For example, if you are writing a method that doubles a value, writing variable*2 is acceptable because this is a very simple operation that can be understood easily. Other than extremely simple cases like this, magic numbers should be avoided. 
+
+END_
+
+User Input/Output
+
+Output is very simple in Java. A simple print statement will print the output to the console window. Java is also capable of taking input from a user. Taking input from a user usually means allowing the user to type into the console window to answer questions or entering information, etc. To do this, an object of class Scanner must be used from the Java.util package. 
+To create a Scanner object, first you must import the Scanner class from the Java.util package. To do this, type: import java.util.Scanner; at the top of the program, outside of the class. Then you must create the object. To do this, type: Scanner scanName = new Scanner(System.in); 
+scanName can be changed to whatever you want to name your scanner. Scanner(System.in) calls a constructor method from the Scanner class taking System.in as the input variable. This means that when this Scanner object is used, the user will be able to type from the keyboard using System.in. To allow user input, call the nextLine() method with the Scanner object. For example: scanName.nextLine() will allow the user to type information onto the console screen where the method is called. The program will not move on until the user types in whatever they want and presses enter.
+Whatever the user typed can be saved in a String variable by calling the method as an assignment to a variable. For example: String input = scanName.nextLine() will save the user input in the String variable input. This variable can later be used for other uses, for example, you can check if the user typed in a specific word and continue the program if this is true. You could also simply print the user input again by printing the input variable. 
+Instead of nextLine(), there are other methods of the Scanner class that can be used. For example, if you want the user to type in an integer, you can use the nextInt() method. 
+There are methods of getting user input other than Scanner. There is a somewhat more advanced method called JOptionPane. By using JOptionPane, we can ask the user a question in a dialog window and allow the user to type in their answer into a text field. It has the same essential function of a scanner but it looks more sophisticated because it opens a separate window for the user to type into. 
+For example, if you want to ask the user for their name with JOptionPane and save their answer into a String variable called name, it would be done with code that looks like this:
+String name = JOptionPane.showInputDialog(“What is your name?”);
+This will open a JOptionPane window with the question written clearly and a space for the user to type in their answer. There will also be an OK and Cancel button for the user to click after typing in their answer.
+There are other types of JOptionPane windows, for example, showMessageDialog(null, “Hello”) will show the String “Hello” in a JOptionPane window. 
+There is also showConfirmDialog(null, “Are you sure?”) will show the String question “Are you sure?” and have 3 buttons for the user to click. There will be a yes, a no, and a cancel button. This can be used for Yes/No questions. 
+
+END_
+
+Decision-Making & Iterations
+
+Decision-making in programs is very important. There are many cases in which it is possible to use these, and almost every large program will incorporate decision-making in some way. The program can check a condition, make a decision based on the condition and take actions specified for the decision made. For example, if you want to print “hi” to people whose age is less than 20, but “hello” to people whose age is greater than 20, you can do this using decision-making.
+The 3 parts of decision-making are: The condition, the body, and the else body. In the example given before, the condition would be age is less than 20. The body will state that if this is true, print “Hi”. The else body will state that if this is not true (if age is greater than 20), then print “Hello”. When this is run in a program, the computer will check the value of a variable holding the age of a person, check the condition, and run the correct body depending on the decision made. 
+The body and else body can often be switched depending on the condition. For example, if we changed the condition to be if age is greater than 20, the body and the else body would be switched. Both methods will have the same result, so you can use whichever you prefer. 
+An else body is not necessary for decision-making. In the previous example, removing the else body would remove the print “Hello”. So the computer will check if age is less than 20 and if this is true, it will print “Hi”. If this is not true, the program has no code to handle this case so it will skip without doing anything. The code will continue to run as normal after skipping the non-existent else body. 
+Also recall that an if-statement can have more than 1 if condition. By using “else if”, you can have more than 1 if condition. This is used like so:
+If(condition)
+	//Statements according to this condition\\
+else if(another condition)
+	//Statements according to this condition\\
+else
+	//Statements for else\\
+Remember that you can have as many else-if conditions as you need. However, you can only have a single if and a single else. 
+Another feature of if/else-if/else statements is nested if statements. This means that an if statement will be nested inside another if statement. This means that the nested if statement will only occur if the first if statement is true. There could be another if statement inside the nested if statement, continuing on for as long as you need. Just remember that the outside if statement must be true for the inside if statement to run. 
+The basic structure of nested if’s looks like this:
+if(condition1)
+	if(condition2)//Will only run if condition1 is true
+		//Statements for condition 2\\
+	Else
+		//Statements for if condition 2 is false\\
+Else
+	//Statements for if condition 1 is false\\
+Because of how nested if statements work, they are often used to make checklists of some sort. You can start with general conditions like is someone a male, then if this is true, you can have another condition like are they 16 years old or greater, then if this is true, you can get more and more specific about the conditions as they continue to prove the conditions true.
+Logical operators are used in decision-making statements. Logical operators take 2 values, compare them based on the operator used, and return a true or false value. There are many logical operators available for our use in decision-making:
+Less than (<) 
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equal to (>=)
+Equal to (==) *Pay Attention to this one*
+Not equal to (!=)
+Using 1 equal sign (=) means an assignment operation. Using 2 equal signs (==) means a logical operator. This is important to know as using the wrong one can lead to incorrect code, often yielding unexpected or unwanted results. 
+There are also conditional operators in decision-making. Conditional operators allow for more than one condition to be checked. Expanding on the example from before, we want to print “Hi” to people whose age is less than 20 and they must be male. In order to do this, we must check both conditions (age < 20 and gender == male). In order to do this, we need the conditional operator that means “and”. The syntax for this is &&. There is also the conditional operator that means “or”. The syntax for this is ||. There is also the “not” operator mentioned before. Using “!” before a logical operator means “not”. Note that it must be put before the logical operator. For example, != means not equal, !< means not less than, etc. 
+In addition to if/else-if/else statements, there is another method of decision-making. This is called a switch statement. If you find yourself in a situation where you have greater than 3 else-if statements, you may want to consider using a switch statement. Of course, you can continue to use else-if statements if you prefer to, but switch may be more efficient. 
+If you want to use a switch statement to assign a % mark depending on the grade letter entered, this would be done like so:
+char grade = …; //Take in a letter with Scanner. Actual code is omitted for this part
+switch(grade)
+{
+	case ‘A’: //Statements for if grade is ‘A’
+	break;
+	case ‘B’: //Statements for if grade is ‘B’
+	break;
+	case ‘C’: //Statements for if grade is ‘C’
+	break;
+	//ETC.
+	default: //Statements for if grade is not found
+}
+The program searches every case to find which one matches the condition given to the switch statement. Notice the “break;” after every case. This is done to exit the switch after the correct case is found. If the break is not added, after the case is found, the computer will proceed to continue completing the action of every case after that, until it reaches a break or default. Without the break, the switch will not work as you expect it to, so it is important to add the break after every case. 
+The default case is similar to an else in an if/else-if/else statement. If the computer cannot find the corresponding case to the condition, it will continue to the default case, just like if the condition is not met in an if statement, it will go to the else statement. 
+Another thing to note about switch statements is that && and || cannot be used in switch statements. 
+
+
+Iterations
+
+Iterations are also known as repetition statements or loops. They are controlled by Boolean values, just like decision-making statements. There are 3 different kinds of loops available in Java and the programmer must choose the correct type. There are: While loops, do-while loops, and for loops. 
+The syntax for while loops looks like so:
+while(condition)
+{
+	statements;
+}
+While is a reserved word in java that indicates the type of the loop being used. The program will enter the loop if the condition is true. If the program enters the loop, the statements are executed. After all of the conditions are executed, the program checks the condition again. This is repeated until the condition is false, so the program will not enter the loop and continue through the rest of the program. Note that if the condition is initially false, the statements inside the loop never execute. This means that the while loop will repeat either 0 or more times. 
+There should always be a statement inside the loop that causes some kind of change to the condition. For example if the condition is (int I > 10), there should be a statement inside the loop that changes the value of the variable. By doing this, the condition will eventually be false. If there are no statements changing the condition, the loop will run forever, until you manually stop it. This is called an infinite loop and is a common mistake. Always make sure that you have statements to prevent an infinite loop. 
+Do-while loops are similar to while loops except that they are guaranteed to run at least once. Do-while loops run exactly how the name describes. It does the statements first then checks the condition later. By doing so, a do-while loop is guaranteed to run at least once, whereas while loops do not run at all if the condition is initially false.
+Do-while loops are written like so:
+do
+{
+	Statements;
+}
+While(condition);
+
+The final type of loop is the for loop. “for” is a reserved word that indicates the start of a for loop. There are 3 different parameters that can be used in the header of the loop. Not all have to be used, but usually they are. The form of the for loop looks like so:
+For(initialization; condition; increment)
+{
+	Statements;
+}
+Initialization is used to either initialize a new variable with a value or an existing variable can be assigned a value. Then the condition is written, and finally the incrementing. It can also be written with a decrementing value if you want the number to go downwards. 
+Example:
+ for(int I = 0; I < 10; i++)
+{
+	Statements;
+}
+This initializes the int variable with a value of 0, the condition is that I is less than 10, and the value of I will increment every iteration of the loop. The initialization statement only occurs once at the beginning of the loop, so you do not have to worry about the variable being assigned a value of 0 every time. After the variable is initialized, the condition is checked. If the condition is true, the statements run and then finally the variable is increased by 1 at the end of the loop. For loops are useful in situations where you know exactly how many times you want the loop to run. In the previous example, the loop runs 10 times, from 0 – 9. 
+Any one of the 3 parts can be left out and the for loop will still run. If the initialization is left out, there will be no variable initialized to control the iterations of the loop. If the condition is left out, it is assumed to be true and creates an infinite loop. If the increment is left out, the variable will not be incremented, often leading to infinite loops. Each part of the parameter must be separated by a semicolon (;). 
+
+END_
+
+Methods
+
+Writing modular program is essential to writing successful code. Before, when our programs were small and only had a single problem to solve, it was not too important. But when code has to account for many multiple scenarios, it can get very long and confusing. This is where methods come in.
+By breaking up the problem into smaller parts and solving the small parts individually, the small parts can be put all together to solve the whole problem. This is called modular programming. The solutions to the small parts are put into what are called methods. 
+An example of a method that we already know is public static void main (String []args). Public means that the method is available for use in many classes, static means that it is associated with the class it is written in, void is the return type, main is the name of the method, and finally the String[]args inside the brackets is called a parameter. 
+These are all parts of the method header. The header consists of the visibility modifier, other method modifiers, the return type, the method name and finally the parameters. 
+The visibility modifier is usually either public or private. Public means that this method can be used in classes other than the class it is written in. There are many modifiers that can be applied to methods such as static, abstract, final, synchronized, and volatile but you only need to know about static, which we will cover later. 
+The next part of the method header is the return type. The return type tells the method what data type it will return after completing the method. The return type will change depending on the purpose of the method. If the method simply does a calculation and does not return any value, the return type can be set to void. 
+ For example, if a method will calculate the area of a square, the method will do the math and return the value. In this case, the value will either be an int or a double. If we want the method to return an int, we must write int as the return type in the method header. 
+The next part of the method header is the method name. The method name can be anything, but it should describe the function of the method efficiently. If the name is too short, it will not describe the function of the method properly and will be confusing. If the name is too long, it will get annoying to type ever y time the method is called. The name of the method should be descriptive but efficient. 
+There are some general rules about method naming that makes code easier to read for other people. Method names should start with lower case letters and capital letters should be used for the first letter of a new word. There cannot be spaces in a method name, so by using capital letters for new words, it is easier to read. An example of a method name that calculates the area of a square would be calcArea.
+The final part of a method header is the parameter(s). A method can have any number of parameters, ranging from none to 255. Although the limit to parameters is 255, a method should almost never have more than 5 parameters. Parameters are put in brackets and are variables that the method needs to run. For example, the calculating area of a square method, the method needs to know a side length of the square to calculate the area. This variable will be of type int and must be given to the method for it to complete. 
+Putting all of these components of a method header together, we can write the complete method header of the calculating area method. It would look something like so: 
+Public int calcArea(int side)
+After the method header is written, the body of the method must be written. The body of the method is the code that will run when the method is called. If we want to find the area of a square, the method must calculate the area and return the value. This will be put inside braces after the method header, like so:
+Public int calcArea(int side)
+{
+	Int area = side*side;
+	Return area;
+} 
+Now that we have the whole method written, we need to learn how to call a method. Simply writing the method will not run it in the program. It must be called in the program for it to run. The calcArea method is not declared static so an object of the class containing the method must be created. We will review creating objects later. If this method is written inside the Square class, an object of this class must be created. After the object is created, the method will be called like so:
+squareObject.calcArea(5); 
+The method header states that there must be an integer given as a parameter, so in this example we used the number 5. Note the syntax of the method call: objectName.methodName(parameters).
+Going back to the static modifier; Writing static inside the method header will associate the method to the class it is written in. In the case of a static method, an object of the class does not have to be created to call the method. If calcArea had been declared static, it could called like so:
+Square.calcArea(5);
+The method is associated with the class it was written in: Square. Because of this, we can call the method using the class name instead of an object of the class. Note the syntax of the static method call: className.methodName(parameters). 
+Another thing to know about calling methods is that if the method is written inside the same class that is running the method, simply writing the method name with the brackets and any parameters will suffice. 
+There are 2 general types of methods: Procedures and Functions. Procedures are methods that do not return a value. Functions are methods that do return a value. 
+Something important that must be discussed when talking about methods is the scope of a variable. The scope of a variable refers to where in the code the variable can be used. If a variable is declared inside the class, it can used anywhere throughout the class. If it is declared inside a method, it can only be used inside the method. Variables initialized inside a method are called local variables. After the method is completed, any local variables inside that method are destroyed. 
+Also remember that String is a class (it starts with a capital letter) and therefore has methods of its own prewritten. Methods of the String class can be called on any String. There are many methods in the String class but the most common ones are length(), equals(String s), equalsIgnoreCase(String s), toUpperCase() and toLowerCase(), indexOf(char c), indexOf(String s), and many more that can be found in the java API. 
+Note that other data types such as int, double, char, boolean, etc. are not classes (do not start with a capital letter) and therefore do not have methods.  
+
+END_
+
+Nested Loops
+
+Similar to nested if statements, nested loops are also available for use in Java. This means that a loop can have another loop inside. This works for any of the types of loops. Every time the outer loop runs once, the inner loop runs fully. For example:
+For(int I = 0; I < 3; i++)
+{
+	For(int j = 0; j < 5; j++)
+}
+The outer for loop will run a total of 3 times. Every time the outer loop runs, the inner loop will run fully. In this case, it will run 5 times. In total, the outer loop will run 3 times and the inner loop will run 5X3 times, for a total of 15 times. This is often useful when working with arrays. 
+
+END_
+
+Classes and Objects
+
+Every major programming language is now object-oriented. This system makes it easy to write very large and complex code while also allowing for code reusability. Another good feature is that editing the code is also easy to do. 
+We mentioned classes before but now we will go into more detail. We stated that a class usually describes a noun, for example, a dog. A class is like a blueprint. Having a blueprint for a building can show us what the building should look like, what the building needs, what it can do, but every building made using the same blueprint does not have to be exactly the same. Using the example of a dog, they can all look different, but they have the same characteristics (four legs, paws, eyes, etc.) and similar behaviors (barking, sniffing, eating, etc.). 
+Classes are the general idea of something. The class of a dog has all of the general ideas of a dog, but says nothing specific about any specific dog. Because classes are only an idea, we say that we define a class whenever we make a new one. The purpose of a class is to layout the general idea so that the programmer can create more specified objects.
+Objects of the same class all have access to the same methods in that class, so all objects will have the same behaviors. Objects also have the same variables, but the value in each variable stored can be different. A tall dog and a short dog will both have the same variable representing the height, but the value in the variable will be specific for the height of the dog object. Despite the difference in the height of the dogs, they can still both bark and run (they have the same behaviors, or methods). 
+A class must first be defined to get the general idea. Then specific values can be stored into each variable in the class to create an instance of the class, also known as an object. Because an object is a specific instance of a class, we say that we instantiate objects. 
+To create a class, first decide what the class will represent. For example, a class can represent a dog, an airplane, a ball, almost anything really. Then decide what the class must know and what the class must be able to do. For example, with the dog example: 
+The class must know: 
+Tail length, fur length, height, weight, color, etc.
+The class must do: 
+Bark, Eat, Wag tail, sleep, etc.
+Now that we know what the class must know and must do, we can create the class. Then we can assign specific values to the variables (tail length, fur length, etc.) and an instance of the class, or an object, can be created. 
+To create an object, there is a specific statement that we can use that looks like so:
+ClassName objectName = new ClassName(Values for every variable);
+Notice the syntax of the previous statements. The ClassName declares which class you are using to create this object. The objectName, also known as the object reference, can be anything but it should be obvious what kind of object it is. Use the “=” to assign a value into the object reference. The word new is a reserved word in Java stating that a new object will be created. Notice how ClassName(Values for Variables) looks like the syntax for a method call. That’s because this is actually a type of method called a constructor. This is the method that is used to construct a new object of the class. The method name is the same as the class name. Values should then be put for every parameter of this method, and the object will be created with those values. 
+Dog puppy = new Dog(short, short, 30, 10, black);
+This statement creates a new object from the Dog class, and the object is called puppy. It uses the Dog() constructor method to create a new object and the parameters states that the puppy will have short tail length, short fur length, it will be 30cm tall, it will weight 10kg, and it will have black fur. The reference “puppy” can now be used to refer to this object. 
+We can write as many of these statements as we want to create as many objects as we need. As long as we keep the order of the parameters the same, and change the values, we can have many, many, many different dogs! Just remember not to use the same object reference for multiple dogs. Having many dogs named “puppy” isn’t useful because if the object assigned to puppy is changed, there is no reference available for the first Dog we created and the object is destroyed by Java Garbage Collection in order to save memory. 
+Remember when we were talking about methods we would use the syntax:
+objectName.methodName(parameters);
+Now that we know what objects are, we can put this syntax to use. If we want “puppy” to bark, we need the object referred to by “puppy” to run the method bark. To do this we can write:
+puppy.bark();
+*Note there are no parameters for the bark method so we do not put any values in the brackets.*
+Now that we have created a Dog class, we need to differentiate between a concrete class and the driver class. Classes that describe general ideas from which objects will be made are called concrete classes. The driver class is a class that contains the main method (public static void main (String[]args)).
+The only method inside the driver class should be the main method. This driver class is where our objects will be made and we can test them out to see if they work how we want them to. There should only be 1 main method, or 1 driver class, in a single project. Also, objects will never be made from the driver class. 
+Remember the naming for classes: They should always start with capital letters. The driver class is also a class, so this rule still applies. The letters DRV are usually put at the end of the class name to show it is a driver class. The driver class used to test Dog objects can be called DogDRV. 
+So far, we have been using predefined classes such as String. Now we will learn to write our own classes so we can create objects that are specific to what we need. First of all, remember about methods. Method headers should have: public 	returnType	methodName(parameters)
+There are 3 different types of methods that we use in our classes. They are called: Constructors, accessors and mutators. 
+First we will go over constructors. We mentioned constructor methods before as we were looking at the syntax for creating an object. Constructor methods are used during creating objects. They syntax for a constructors header looks like so: public 	methodName(parameters)
+Note that the methodName for a constructor must be the same as the name of the class. Also note that instead of putting void for no return type, we simply skip the return type altogether. Because the methodName is the same as the name for the class, the syntax for a constructor method header will look more like so: public	className(parameters)
+The parameters for a constructor method should account for all of the variables for the class. Going back to the Dog example, our variables were: String tail length, String fur length, int height, int weight, and String color. In that case, the parameters for the constructor method should be the same data types, in the same order. The names of the variables do not have to match those of the parameter.
+public	Dog(String tLength, String fLength, int h, int w, String col) can be written as the header for the constructor method of the Dog class. 
+The body of the constructor method should take all of the parameters that the user will enter when the object is created and store them into the variables of the class. For example:
+public	Dog(String tLength, String fLength, int h, int w, String col)
+{
+	tailLength = tLength;
+	furLength = fLength;
+	height = h;
+	etc. 
+}
+By doing so, the values that the user enters when the constructor method is called are assigned to the instance variables of the class, and the object is created. Keep in mind that when the constructor method is called, the parameters have to be in the correct order, every time. 
+A good thing to know about constructors is that if you do not manually write your own constructor method, Java automatically supplies a null constructor. This means a constructor method that sets all of the instance variables to null or 0. However, if you do write a constructor method, then Java will not supply you with one. In this case, you should write your own null constructor so that you can create blank objects just to test mutator or accessor methods. 
+Now you might be thinking: if constructor methods must have the same name as the class, but we should write 2 constructors, wouldn’t we have 2 methods that have the same name? The reason this is acceptable is because the null constructor will not have any parameters, while the normal constructor will. Even if 2 methods have the same name, if the parameters are different, it is acceptable. This is called overloading. Don’t name all of your methods “method” with a different parameter list though, overloading should only be used when 2 methods have similar functions but take in different data types for the parameters.
+The next type of method is the accessor method. Accessor methods are usually very simple methods that simply return the value of an instance variable. Because instance variables should be declared as private in the class, they cannot simply be called. They must be called through a method in the same class, and this method is called an accessor method. Writing accessor methods are very easy.
+public	returnType	methodName()
+{
+	return instanceVariable;
+}
+The return type will depend on the data type of the variable that this method is accessing. The name of the instance variable being returned must be used in the return statement as well. There is a convention to naming these accessor methods. If the name of the instance variable that is being return is height, then the method will usually be named getHeight(). If the variable is name, the method can be named getName(). Because these methods are usually only very simple return statements, they do not need any parameters in the brackets. 
+The final type of method used in concrete classes is mutators. Mutator methods are used to simply change the value of an instance variable. For example, if we have a black dog but we want to change the color to gold, we can use a mutator method called setColor() or changeColor() to do so.
+The syntax for a mutator method header is: public	void	methodName(parameters)
+Mutator methods only change the value of a variable and therefore will never return anything. This means that the return type will always be void. The methodName can be anything as long as it describes the function of the method. Finally, the parameters depend on what is needed for this method to run. 
+In the case of the setColor() method, the parameter can be another String col. The method will simply assign the new color from the parameters to the instance variable color. A method that does this will look like so:
+public void setColor(String col)
+{
+	color = col;
+}
+Those are the 3 types of methods that are used in the declaration of a concrete class. 
+
+END_
+
+Object and Class References
+
+Remember that when we create an object, we assign it a name. This is called a reference variable. Also recall that the reference variable simply points to the space in the computer’s memory where the object is stored, not the actual object itself. You can think of reference variables as “pointers”. 
+You may have seen an error called null reference. This occurs when a reference variable has been created but does not currently point to any specific object. For example, if we write:
+ChessPiece bishop;
+The reference variable bishop is created but it does not point to an object until we finish the object creation statement: bishop = new ChessPiece();
+Now that we know about null references, we can learn more about the use of the reserved word null. Null can be used to specifically set the value of a variable to null, or to check if a reference is a null reference. These are done like so:
+bishop = null; //Setting the value of a variable to null
+if(bishop == null) //Checking if a reference variable is a null reference. 
+Checking for null references is useful because attempting to use a null reference will cause a NullPointerException and cause the program to crash. Usually the compiler will check if a local variable is used without being initialized but instance variables are automatically set to null. 
+Another possible way to refer to an object is the reserved word “this”. The “this” reference allows an object to refer to itself. This means that if the “this” reference is used inside a method, it will refer to the object through which the method was invoked. 
+For example, if we have 2 objects, object 1 and object 2, and a method called doSomething() where the “this” reference is used, the method can be called through both objects:
+object1.doSomething() //”this” will refer to object1 inside the method
+object2.doSomething()//”this” will refer to object2 inside the method
+Now we must review how assignment statements differ between primitive data types and object references. 
+For primitive types:
+int num = 10;                       //num has a value of 10
+int num2 = 20;                    //num2 has a value of 20
+num2 = num1;		  //num1 and num2 both have a value of 10
+For object references:
+bishop1 = new ChessPiece();                    //bishop1 points to memory location 123 (a separate object)
+bishop2 = new ChessPiece();	             //bishop2 points to memory location 456 (a separate object)
+bishop2 = bishop1;		             //both variables point to memory location 123 (the same object)
+*Note that bishop1 and bishop2 both point to the same location in memory. They are called aliases of each other*
+Aliases can be very useful but must also be used very carefully. Because 2 references point to the same object, if a value of the object is changed using one of the variables, it will change the value of the object for every variable referring to it. 
+Just as we checked if object references were null before, we can do something similar to check if 2 object references are aliases or not. 
+If(bishop1 == bishop2) //Will return true if they are aliases, false if not
+Also know that every single object automatically has a method called equals(Object obj), but unless we rewrite the method ourselves, it has the same function as the “==” operator. The equals method would be used like so:
+If(bishop1.equals(bishop2))//Will return true if they are aliases. The condition can be changed by you.
+The equals method had an Object as the parameter. When objects are used as parameters in Java, a copy of the actual parameter is stored in a formal parameter, making the 2 parameters aliases. In this way, passing methods as parameters is similar to an assignment statement. Because of this, Java methods are called passed by value. 
+
+
+END_
+
+Arrays
+
+In a big project, there are obviously many, many variables that have to be used. For example, a multiple choice quiz might have to save 20 different String variables to store the answer to each question. In cases like these, handling so many variables individually can get extremely confusing. That is why we have arrays. 
+An array is an object of the Array class that is used to store multiple different variables of similar type. Instead of creating 20 different int variables, we can create a single array of type int with 20 indexes. 
+A very important thing to remember when using arrays is that the first index is always 0. So with the array of integer type data, the 20 indexes are from 0 – 19. To access data inside an array, we use the syntax: arrayName[indexNumber] 
+Because arrays are objects, they must be created using a statement. The general syntax for this statement would be: dataType[] arrayName = new dataType[numberOfIndexes]
+So to create an array of integer type with 20 indexes, the statement would be: 
+int[] numbers = new int[20]
+And the syntax to get the 20th number would be: numbers[19]
+The syntax to get the 11th number would be: numbers[10]
+And so on…
+If the array is numerical, and no values have been put into the indexes, they will automatically contain 0. An array of chars will be initialized to null, and Booleans will automatically initialize to false.
+Now that we have an empty array, we need to learn how to put values into the indexes. There are many ways to do this, but the simplest method is to manually assign values to the desired index. For example, to store the value 54 in index 4, we would write:
+numbers[4] = 54;
+Remember that even though the index is 4, it is the 5th number in the array because the indexes start at 0. 
+Now that we have the value stored in the index, the index can be used in any place where the number would be used. For example:
+Instead of: System.out.println(“The 4th number is” + 54);  *This is bad. Remember magic numbers!*
+We could write: System.out.println(“The 4th number is” + numbers[4]); *This is better*
+Although arrays are very useful, they have to have some kind of shortcoming. For example, after an array has been created, the size of the array cannot be changed. Because the size of an array cannot be changed however we want to change it, it is useful to be able to find out the length of an array. 
+Arrays are objects, and as such come from a class. The class for arrays, called Arrays, has an instance variable for the length of the array associated with every array object that is created. To access this variable to find out the length of an array, we use the syntax: arrayName.length    (Note the lack of brackets and parameters. The length of an array is not a method, but a variable)
+So with our example array, we would write: numbers.length
+This would hold the value 20 because the numbers array was constructed with 20 indexes. Because the number of the index starts at 0, the length is always one greater than the last index. This is useful to know because if we want to access the last index of an array we can use: numbers[numbers.length-1].
+There is another method of creating arrays called explicit array declaration and initialization. This is a way to declare an array of a specified size and initialize the value in each index all in one statement. The statement to create an array of 5 numbers, 1,2,3,4,5, using this method would look like so:
+int[] nums = {1, 2, 3, 4, 5};
+Note that the “new” keyword is not necessary, and the curly brackets {} are used instead of the square brackets []. The size of the array is not specifically stated, but it is understood that there are 5 numbers to be stored so it is created with a length of 5. 
+Now if we have to print out all of the indexes in an array, it would get tedious to print each index separately. The easier way to do this would be to use a for loop.
+To print out all of the indexes in the numbers array with a loop, we could write:
+For(int I = 0; I < numbers.length; i++)
+{
+	System.out.println(numbers[i]);
+} 
+The variable I is used to control the number of iterations of the loop as well as the number of the index printed out by the array. This is a very efficient method of printing all of the indexes in an array no matter how large the array is, because the loop will run as long as the length of the array.
+We talked about arrays containing many values of the same data type. Another reason why arrays are so useful is that, not only can they hold many primitive data type values, they can also be created to hold many objects of the same type.
+If our program requires many objects of the same class to be created, we can create what is called an array of objects. The class that the objects are created from must be the same so the objects all have the same general idea. As long as the objects are made from the same class, they can be saved in a single array. The data type of the array will be the class that the objects are made from.
+For example, if we have many objects of class Things and we want to save them in an array, we must first create the array with the data type of the array set as the class:
+Things[] objArray = new Things[10];
+Of course, we must first create an concrete class called Things in order to create this array of objects, so that is the first step. Then the array can be created using the statement above. Finally, create objects of the class and assign them to indexes in the array.
+objArray[0] = new Things();
+Or use the for loop to fill many indexes at once. 
+As we said before, arrays must have some kind of shortcomings despite being so useful. We mentioned that the size of the array cannot be changed but there are many more that we must know about. First of all, arrays can only contain data of a single data type, whether it is primitive or objects. Trying to access an index that lies outside of the array will give an ArrayOutOfBounds error and crash the program. As well as the length of the array not being changeable, there is also the issue of trying to use an empty cell with a method, causing the program to crash because of a null pointer exception. 
+What if there was something similar to arrays but at the same time, eliminates these problems that arrays have. There is actually, and they are called Array Lists. 
+Array Lists do not allow empty cell errors because of the way they operate, they have methods that allow for the management of the data stored in the Array List, and they can become smaller or larger depending on the amount of data they need to hold. 
+Just like arrays, Array Lists are also objects. The class that they are made from is the ArrayList class. In order to use an Array List in your program, you must first import the ArrayList class. This is just like importing the Scanner class for user input. 
+At the very top of the program, even above the class, import the class by typing:
+import java.util.ArrayList;
+After importing the class, we must create the Array List object. The statement to do this looks like so:
+ArrayList <DataType> ArrayListName = new ArrayList <DataType>()
+Something to know about Array Lists is that they cannot directly hold primitive data types. You cannot have an Array List that contains int variables, but you can have an Array List that contains object of the Integer class (Remember Wrapper Classes!!!). In the case of creating an ArrayList of Integer type, the statement would look like this:
+ArrayList<Integer> numbers = new ArrayList<Integer>();
+Notice that we are not required to specify the size of our Array List because it automatically changes sizes depending on the amount of data we add to it. 
+Recall that we mentioned the ArrayList class has methods to help with the management of the data inside of the Array List. The first of this method we will discuss is the add method. 
+The add method requires a parameter that is the same data type as the Array List. 
+
+END_

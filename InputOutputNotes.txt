@@ -1,0 +1,61 @@
+﻿User Input/Output
+
+Output is very simple in Java. A simple print statement will print the output to the console window._
+Java is also capable of taking input from a user._
+
+Taking input from a user usually means allowing the user to type into the console window
+to answer questions or entering information, etc._
+
+To do this, an object of class Scanner must be used from the Java.util package._ 
+
+To create a Scanner object, first you must import the Scanner class from the Java.util package._
+
+To do this, type: import java.util.Scanner; at the top of the program, outside of the class._
+
+Then you must create the object. To do this, type: Scanner scanName = new Scanner(System.in);_ 
+
+scanName can be changed to whatever you want to name your scanner. 
+Scanner(System.in) calls a constructor method from the Scanner class
+taking System.in as the input variable. This means that when this Scanner object is used, 
+the user will be able to type from the keyboard using System.in._
+
+To allow user input, call the nextLine() method with the Scanner object.
+For example: scanName.nextLine() will allow the user to type information onto the console screen
+where the method is called in the program._
+
+The program will not move on until the user types in whatever they want and presses enter._
+
+Whatever the user typed can be saved in a String variable by calling the method as an assignment
+to a variable. For example: String input = scanName.nextLine() will save the user input
+in the String variable input. This variable can later be used for other uses, for example, 
+you can check if the user typed in a specific word and continue the program if this is true._
+
+You could also simply print the user input again by printing the input variable. 
+Instead of nextLine(), there are other methods of the Scanner class that can be used. 
+For example, if you want the user to type in an integer, you can use the nextInt() method._
+
+There are methods of getting user input other than Scanner.
+There is a somewhat more advanced method called JOptionPane. By using JOptionPane, 
+we can ask the user a question in a dialog window and allow the user to type in their answer 
+into a text field._
+
+It has the same essential function of a scanner but it looks more sophisticated because it opens 
+a separate window for the user to type into._
+
+For example, if you want to ask the user for their name with JOptionPane and save their answer 
+into a String variable called name, it would be done with code that looks like this:_
+
+String name = JOptionPane.showInputDialog(“What is your name?”);_
+
+This will open a JOptionPane window with the question written clearly and a space for the user
+to type in their answer. There will also be an OK and Cancel button for the user to click 
+after typing in their answer._
+
+There are other types of JOptionPane windows, for example, showMessageDialog(null, “Hello”) 
+will show the String “Hello” in a JOptionPane window without a text field for user input._
+ 
+There is also showConfirmDialog(null, “Are you sure?”) will show the String question
+“Are you sure?” and have 3 buttons for the user to click. There will be a yes, a no, and a cancel 
+button. This can be used for Yes/No questions._
+
+END_

@@ -1,0 +1,132 @@
+﻿Methods
+
+Writing modular program is essential to writing successful code. Before, when our programs were 
+small and only had a single problem to solve, it was not too important._
+
+But when code has to account for many multiple scenarios, it can get very long and confusing._
+
+This is where methods come in._
+
+By breaking up the problem into smaller parts and solving the small parts individually, 
+the small parts can be put all together to solve the whole problem. This is called modular 
+programming. The solutions to the small parts are put into what are called methods._
+ 
+An example of a method that we already know is: public static void main (String []args)._
+
+Public means that the method is available for use in any class, static means that it is 
+associated with the class it is written in, void is the return type, main is the name of the method,
+and finally the String[]args inside the brackets is called the parameter._
+ 
+These are all parts of the method header. The header consists of the visibility modifier, 
+other method modifiers, the return type, the method name and finally the parameters._
+ 
+The visibility modifier is usually either public or private. Public means that this method 
+can be used in classes other than the class it is written in._
+There are many other modifiers that can be applied to methods such as static, abstract, final, 
+synchronized, and volatile but you only need to know about static, which we will cover later._
+ 
+The next part of the method header is the return type. The return type tells the method what data 
+type it will return after completing the method. The return type will change depending on the 
+purpose of the method. If the method simply does a calculation and does not return any value, 
+the return type can be set to void._
+ 
+For example, if a method will calculate the area of a square, the method will do the math and 
+return the value. In this case, the value will either be an int or a double. If we want the 
+method to return an int, we must write int as the return type in the method header._
+ 
+The next part of the method header is the method name. The method name can be anything, 
+but it should describe the function of the method efficiently. If the name is too short, 
+it will not describe the function of the method properly and will be confusing. 
+If the name is too long, it will get annoying to type every time the method is called. The name 
+of the method should be descriptive but efficient._
+ 
+There are some general rules about method naming that makes code easier to read for other people. 
+Method names should start with lower case letters and capital letters should be used for the 
+first letter of a new word. There cannot be spaces in a method name, so by using capital letters 
+for new words, it is easier to read. An example of a method name that calculates the area of a 
+square would be calcArea._
+
+The final part of a method header is the parameter(s). A method can have any number of parameters, 
+ranging from none to 255. Although the limit to parameters is 255, a method should almost never 
+have more than 6 parameters._
+
+Parameters are put in brackets and are variables that the method 
+needs to run. For example, the calculating area of a square method, the method needs to know 
+a side length of the square to calculate the area. This variable will be of type int and must 
+be given to the method for it to complete._
+ 
+Putting all of these components of a method header together, we can write the complete 
+method header of the calculating area method. It would look something like so:_
+ 
+Public int calcArea(int side)_
+
+After the method header is written, the body of the method must be written. 
+The body of the method is the code that will run when the method is called. 
+If we want to find the area of a square, the method must calculate the area and return the value._
+
+This will be put inside braces after the method header, like so:_
+
+Public int calcArea(int side)
+{
+	Int area = side*side;
+	Return area;
+}_
+ 
+Now that we have the whole method written, we need to learn how to call a method. 
+Simply writing the method will not run it in the program. It must be called in the program for it 
+to run._
+
+The calcArea method is not declared static so an object of the class containing the method 
+must be created. We will review creating objects later. If this method is written inside the 
+Square class, an object of this class must be created._
+
+After the object is created, the method will be called like so:_
+
+squareObject.calcArea(5);_
+
+The method header states that there must be an integer given as a parameter, so in this 
+example we used the number 5. Note the syntax of the method call:_
+
+objectName.methodName(parameters);_
+
+Going back to the static modifier; Writing static inside the method header will associate the 
+method to the class it is written in. In the case of a static method, an object of the class 
+does not have to be created to call the method. If calcArea had been declared static, 
+it could called like so:_
+
+Square.calcArea(5);_ //Square is the name of the class the method is written in
+
+The method is associated with the class it was written in: Square. Because of this, we can 
+call the method using the class name instead of an object of the class._
+
+Note the syntax of the static method call:_
+
+className.methodName(parameters);_ 
+
+Another thing to know about calling methods is that if the method is written inside the same 
+class that is running the method, simply writing the method name with the brackets and any 
+parameters will suffice._
+ 
+There are 2 general types of methods: Procedures and Functions. Procedures are methods that do not
+return a value. Functions are methods that do return a value._
+ 
+Something important that must be discussed when talking about methods is the scope of a variable. 
+The scope of a variable refers to where in the code the variable can be used._
+
+If a variable is declared inside the class, it can used anywhere throughout the class. 
+If it is declared inside a method, it can only be used inside the method. Variables initialized 
+inside a method are called local variables. After the method is completed, any local variables 
+inside that method are destroyed._
+ 
+Also remember that String is a class (it starts with a capital letter) and therefore has methods 
+of its own, prewritten._
+
+Methods of the String class can be called on any String. There are many methods in the String 
+class but the most common ones are length(), equals(String s), equalsIgnoreCase(String s), 
+toUpperCase() and toLowerCase(), indexOf(char c), indexOf(String s), and many more that can be 
+found in the java API._
+ 
+Note that other data types such as int, double, char, boolean, etc. are not classes 
+(do not start with a capital letter) and therefore do not have methods._  
+
+END_

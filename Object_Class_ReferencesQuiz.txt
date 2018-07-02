@@ -1,0 +1,89 @@
+﻿1. A reference variable is:
+
+A) The name assigned to an object that points to the space in the computer's memory where the object is stored
+B) A variable that is used as a reference to the size of the value stored in other variables
+C) Necessary in order to use any object that has been instantiated
+D) A & C_
+
+D_
+
+2. When a reference variable has been created but does not point to anything
+For example: ChessPiece bishop; is called:
+
+A) Non-object reference
+B) Null reference
+C) Non-pointer reference
+D) None of the above_
+
+B_
+
+3. Attempting to use a null reference in the program will cause a:
+
+A) NullPointerException
+B) InputMismatchException
+C) FileNotFoundException
+D) There is no problem with using a null reference_
+
+A_
+
+4. Assuming the equals method has not been overwritten, bishop == null and
+bishop.equals(null) have the same function.
+
+A) True
+B) False_
+
+A_
+
+5. What will "this" refer to in the following code:
+object1 = object2;
+object2.doSomething();
+
+A) object1
+B) object2
+C) doSomething()
+D) object1 and object2_
+
+D_
+
+6. 2 reference variables pointing to the same location in memory are called:
+
+A) Twins
+B) Sibling references
+C) Aliases
+D) Similar references_
+
+C_
+
+7. Assume the object has a variable length. Consider the following code:
+object1.setLength(10);
+object2.setLength(5);
+object2 = object1;
+object2.setLength(3);
+
+What is the length of object 1?
+
+A) 10
+B) 3
+C) 5
+D) 0_
+
+B_
+
+8. When objects are used as parameters in Java:
+
+A) A copy of the actual parameter is stored in a formal parameter
+B) A copy of the formal parameter is stored in the actual parameter
+C) A brand new object is made in the formal parameter, regardless of the actual parameter
+D) Objects cannot be used as parameters in Java_
+
+A_
+
+9. Passing methods as parameters is similar to an assignment statement. Because
+of this, Java methods are called:
+
+A) Passed by reference
+B) Passed by object
+C) Passed by variable
+D) Passed by value_
+
+D

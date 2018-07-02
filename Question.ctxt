@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Question()
+comment0.text=\r\n\ Null\ constructor\r\n\ Sets\ the\ question\ and\ answer\ to\ null\r\n\ Used\ to\ make\ null\ objects\ to\ test\ methods\r\n
+comment1.params=qIn\ ansIn
+comment1.target=Question(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Real\ constructor\r\n\ Takes\ in\ 2\ Strings,\ and\ sets\ them\r\n\ as\ the\ question\ and\ the\ answer\ respectively\r\n
+comment2.params=
+comment2.target=java.lang.String\ getQuestion()
+comment2.text=\r\n\ Simple\ accessor\ method\r\n\ to\ return\ the\ question\ variable\r\n\ Simple\ return\ statement\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAnswer()
+comment3.text=\r\n\ Simple\ accessor\ method\r\n\ to\ return\ the\ answer\ variable\r\n\ Simple\ return\ statement\r\n
+numComments=4

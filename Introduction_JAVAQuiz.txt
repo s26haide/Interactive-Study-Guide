@@ -1,0 +1,176 @@
+﻿1. Why is Java a popular coding language?
+
+A) It is simple to learn and use
+B) Java is platform-independent
+C) A & B
+D) Java is the only object-oriented programming language available for use_
+
+C_
+
+2. What does it mean that Java is platform-independent?
+
+A) Java programs can run on any computer, regardless of the operating platform of the computer
+B) Java code does not need any platform to run
+C) The computer running the code needs to be using the Java operating platform
+D) None of the above_
+
+A_
+
+3. Everything in Java code must be inside a:
+
+A) Box
+B) Container
+C) Terminal window
+D) Method_
+
+B_
+
+4. Container sizes must go from:
+
+A) Small - Large
+B) Large - Small
+C) Medium - Small - Large
+D) Medium - Large - Small_
+
+B_
+
+5. The largest container in Java is the:
+
+A) Statement
+B) Method
+C) Package
+D) Class_
+
+D_
+
+6. Which of the following would probably be described by a Java class?
+
+A) An airplane
+B) A student
+C) A question
+D) All of the above_
+
+D_
+
+7. The 2 parts of a class are:
+
+A) A header and the body
+B) A statement and a method
+C) A class and a method
+D) A body and an elbow_
+
+A_
+
+8. The name of a class should always be:
+
+A) Lower case
+B) Upper case
+C) A number
+D) Over 10 letters long_
+
+B_
+
+9. The medium-sized container in Java is the:
+
+A) Class
+B) Statement
+C) Method
+D) Package_
+
+C_
+
+10. Method names should:
+
+A) Describe what the method does
+B) Always start with upper case
+C) Be in the method body
+D) All of the above_
+
+A_
+
+11. What is the proper syntax for the main method?
+
+A) private static void main (String []args)
+B) public static int main (String []args)
+C) protected static void main (String []args)
+D) public static void main (String []args)_
+
+D_
+
+12. Which of the following syntaxes for the main method will work?
+
+A) public static void main (String []args)
+B) public static void main (String []aaaaaaaaaaa)
+C) public static void main (String []broccoli)
+D) All of the above
+E) None of the above_
+
+D_
+
+13. Which is the smallest container in Java?
+
+A) Class
+B) Method
+C) Statement
+D) Package_
+
+C_
+
+14. A statement must end with a:
+
+A) ;
+B) .
+C) \
+D) /_
+
+A_
+
+15. Comments affect how the program runs.
+
+A) True
+B) False_
+
+B_
+
+16. Where are comments usually written?
+
+A) Beside important statements
+B) At the top of methods
+C) At the top of classes
+D) All of the above_
+
+D_
+
+17. Computers read comments and decide how the program will run based on that
+
+A) True
+B) False_
+
+B_
+
+18. What do you have to type to make a comment?
+
+A) **
+B) @/
+C) \\
+D) //_
+
+D_
+
+19. What is the most efficient way to write a multiple line comment?
+
+A) // \\
+B) \\ //
+C) ** **
+D) /* *\_
+
+D_
+
+20. What should you include in your comments at the top of a class?
+
+A) Name
+B) Project
+C) Date
+D) All of the above_
+
+D

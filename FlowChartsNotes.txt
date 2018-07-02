@@ -1,0 +1,60 @@
+﻿Flow Charts
+
+A flow chart is a diagram that contains symbols, boxes and text all connected by arrows to show the “flow” of the program.
+It is very similar to pseudo-code except is a bit more detailed. 
+Flow charts show the many paths a program can take, showing every possible situation that the program must deal with._
+There are 3 different symbols used in flow charts: rounded rectangles, parallelograms, and rectangles._
+The rounded rectangle indicates the terminals of the program. It is used to show the start and the end of the program. _
+ 
+The parallelograms are used to indicate any Input/Output operations. 
+If the program needs to output any information to the user, for example, asking a question, 
+or needs to take input from the user, for example, taking the answer of a question, the parallelogram is used._
+  
+The last symbol used is the normal rectangle. The rectangle indicates a process. 
+If the computer must do a mathematical process or must assign a value to a variable, the rectangle is used._
+ 
+There is usually text inside each of these symbols that explains what is happening in the code._
+
+There are 4 different possible structures of a flow chart: Sequence, Decision, Repetition, and Case._
+
+Sequence is a series of actions that occurs in order.
+The flow chart will show sequence with basic arrows between each symbol, starting at the top and ending at the bottom._
+
+Decision is when there are multiple possible actions the program can take, 
+but will choose one depending on whether a condition is met._
+A new symbol is used to show decision. 
+A diamond shape will contain a yes/no question, and depending on the answer to the question, either a yes path will be taken
+or a no path will be taken._
+It is not necessary for both a yes or no path to exist. 
+It is possible to only have either a yes or no path, and if a path does not exist, the program will continue
+without doing anything._
+ 
+Repetition is used to show a part of the program that will repeat. This is also known as a loop._
+
+The diamond symbol is used to ask a yes/no question, and depending on the answer to the question, 
+the program can enter the loop. If the condition is met, the program will enter the loop and go to a rectangle, 
+to show a function._
+After the function, the diagram shows an arrow back to the diamond to ask the question again._
+This will continue to loop until the condition in the diamond is not met and the program will continue 
+instead of entering the loop again._
+
+Case structure is very similar to the decision structure._
+A diamond is used to ask a question, except instead of only a yes or no question, the question can have multiple answers. 
+Each answer will lead to a different function, so it looks similar to the decision structure
+only with more than 2 possible paths the program can take._
+ 
+As flow charts can get very long depending on the program, it is necessary to know about connectors. 
+A connector is used when a flow chart does not fit on a single page and must continue to the next page. 
+A connector is represented by a circle._
+
+The final thing to learn about flow charts is modules. 
+In computer programming, a computer function is often done in a method._
+
+If you want to show that a method is called in a flow chart, there is a special symbol for it. 
+A separate flowchart can be made to explain the function of the method used in a module is necessary. 
+The symbol for a module looks like a rectangle with 2 lines through it, vertically._
+
+Of course, the different structures of flow charts can be combined. This is usually the case for actual programs. 
+For example: A decision can lead to a loop that continues on to a sequence that goes to another decision, etc. 
+
+END_

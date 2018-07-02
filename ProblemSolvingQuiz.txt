@@ -1,0 +1,87 @@
+﻿1. The steps taken to solve a problem is called:
+
+A) Problem Solving Steps
+B) Steps to solve a problem
+C) Problem Solver
+D) Problem Solving Model_
+
+D_
+
+2. The Problem Solving Model includes how many step?
+
+A) 4
+B) 6
+C) 8
+D) 10_
+
+B_
+
+3. What is the first step?
+
+A) Identify the problem
+B) Brainstorm Ideas
+C) List the steps to be taken
+D) Analyse the problem_
+
+A_
+
+4. If the solution you created does not meet all of the requirements...
+
+A) Create a new solution that does
+B) Brainstorm more ideas to solve the problem
+C) Go back to step 1 with the unsolved requirements as the problem
+D) Ignore the unsolved requirements_
+
+C_
+
+5. Always jump straight into a problem that needs to be solved
+
+A) True
+B) False_
+
+B_
+
+6. Which step includes completing the solution to the problem?
+
+A) 3
+B) 4
+C) 2
+D) 6_
+
+D_
+
+7. Which step includes prioritizing ideas and listing the pros and cons of these ideas?
+
+A) 2
+B) 5
+C) 4
+D) 3_
+
+C_
+
+8. Which step includes listing the steps to be taken following the chosen solution?
+
+A) 2
+B) 3
+C) 4
+D) 5_
+
+D_
+
+9. Which step includes choosing assumptions that can safely be made?
+
+A) 2
+B) 5
+C) 3
+D) 1_
+
+A_
+
+10. Step 3 says to:
+
+A) Analyze the problem
+B) Brainstorm ideas
+C) Prioritize ideas
+D) Identify the problem_
+
+B

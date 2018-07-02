@@ -1,0 +1,86 @@
+﻿Variables and Data Types
+Each piece of data that is given to Java must be given as a variable. 
+Variables are a space in the computer’s memory that is given a name so we can access it. 
+Java is hard-type: every variable must have a predetermined type and the type must be chosen when the variable is declared. 
+Selecting the correct type for every situation is important as it saves space in memory and makes the program more robust._
+
+Numerical variable types: byte, short, int, long, float, double._
+
+byte, short, int, and long are integer data types. This means that they cannot hold decimals. 
+float and double are real number variables, meaning they can hold decimals._
+
+Byte variables take 1 byte of memory. A byte variable can hold any number between -128 to 127. 
+Byte is not often used as the range of the data makes its use risky. If the number goes above 127 or below -128, 
+it causes problems in the program._
+ 
+Short variables take 2 bytes of memory. A short variable can hold any number between -32768 and 32767. 
+Short variables are also not used very often._
+ 
+Int variables are the most common type of integer variables and take 4 bytes of memory. 
+An int variable can hold any integer number between -2,147,483,648 and 2,147,483,647. 
+Int variables are the most common because they do not take much memory space, only 4 bytes, 
+but have a range that can hold almost any number that is being used for practical purposes._
+ 
+In the rare case that an integer value that is too large for an int variable to hold is necessary, 
+there is the long variable. A long variable takes 8 bytes of space in memory and can hold any integer number 
+with a value between -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807._
+
+This range allows for almost any integer number to fit into a long variable, but in the extremely rare case that it does not,
+there are other ways to store a number like that, although it is technically not a variable._ 
+
+These variables are integer variables and cannot hold any number that contains a decimal. 
+For a number containing a decimal, either float or double must be used._
+ 
+Float variables need 4 bytes of space in memory and allow an accuracy of 7 decimal places._
+
+Double variables need 8 bytes of space in memory and allow for an accuracy of 15 decimal places._
+The range for float variables is +- 3.40282347 * 10^38, while the range for double variables is 
++- 1.79769313486231570 * 10^308._
+Double is more commonly used than float because it allows for more precision in regards to the decimal places, 
+but float can also be used for less precise numbers._
+ 
+All of these data types: byte, short, int, long, float, and double are all primitive data types.
+Primitive variables start with lower case letters. Each primitive variable type also has a corresponding class 
+that has the same name but with a capital letter._ 
+
+This class contains useful methods and variables that make working with these primitive variables easier. 
+For example, Double and double are different. Integer and int are different._
+The ones that start with a capital letter are wrapper classes and the lower case ones are data types. 
+Don’t make this mistake while writing code!_
+ 
+The wrapper class for every primitive numerical variable has a variable that already has a set value. 
+These are called predefined constants. For example, the maximum and minimum value for every variable can found 
+using the predefined constant MAX_VALUE and MIN_VALUE respectively._
+
+For example, to find the maximum value for a double variable, you could use Double.MAX_VALUE. 
+Capital “D” on Double to use the wrapper class and not the variable type._
+ 
+Constants do not have to be predefined. You can create your own constant variables to use in your own code. 
+For example, if your code uses HST, the value of HST will not change. Therefore, you can use a constant variable by 
+declaring it like this: public final double HST_AMOUNT = 0.13;_
+
+The variable should be declared with the word final to make it a constant variable. 
+That means that the value assigned to the variable when it is created (in this case, 0.13) cannot be changed 
+later in the program._
+
+The variable name should be in all caps so that someone who is reading the code will know that the variable is constant 
+and an underscore should be used to separate words._
+
+There are other variable types that are not numerical. For example, there is the Boolean variable and the char variable. 
+Boolean variables contain either true or false as their value and char contains only one character, for example ‘a’ or ‘*’._
+  
+When someone is reading your code, they should be able to get a decent understanding of what is happening on a single 
+line of code simply by looking at that single line. Something that makes this difficult is magic numbers._
+ 
+Magic numbers are numbers whose meaning cannot be understood out of context. Using the previous example, calculating tax, 
+if the number 0.13 is used in a calculation, someone may not understand what that number means
+(if their tax% is different for example), so instead of using 0.13, whose meaning cannot be determined out of context, 
+use a variable called HST containing the number 0.13._
+
+The use of magic numbers makes your code difficult to understand and thus, should always be avoided where possible. 
+There are times when using a number might be acceptable, but this is very rare. 
+For example, if you are writing a method that doubles a value, writing variable*2 is acceptable because this is a 
+very simple operation that can be understood easily. Other than extremely simple cases like this, 
+magic numbers should be avoided._
+
+END_

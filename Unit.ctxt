@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ ReadNotes()
+comment0.text=\r\n\ The\ ReadNotes\ method\ is\ run\ when\ the\ user\ \r\n\ presses\ the\ button\ to\ read\ notes.\ It\ takes\r\n\ in\ a\ String\ for\ the\ fileName.\ The\ fileName\ is\r\n\ set\ to\ the\ correct\ file\ when\ a\ button\ is\ pressed.\r\n\ It\ will\ then\ scan\ the\ text\ file\ and\ print\ it\ out\r\n
+comment1.params=
+comment1.target=void\ PlayGame()
+comment2.params=
+comment2.target=void\ DoQuiz()
+comment2.text=\r\n\ The\ DoQuiz\ method\ is\ run\ when\ the\ user\r\n\ clicks\ the\ button\ to\ do\ the\ quiz\ \r\n\ The\ correct\ fileName\ for\ the\ quiz\ is\ chosen\r\n\ when\ the\ topic\ is\ chosen\ from\ the\ GUI\r\n\ \r\n\ Creates\ the\ necessary\ Scanner\ objects\r\n\ Fills\ the\ ArrayList\ with\ all\ of\ the\ Question\ objects\r\n\ Prints\ the\ question\ and\ allows\ the\ user\ to\ answer\r\n\ Prints\ out\ the\ users\ score\ as\ a\ percentage\r\n
+numComments=3

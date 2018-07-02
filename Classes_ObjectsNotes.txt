@@ -1,0 +1,239 @@
+﻿Classes and Objects
+
+Every major programming language is now object-oriented. This system makes it easy to write 
+very large and complex code while also allowing for code reusability._
+
+Another good feature is that editing the code is also easy to do._
+ 
+We mentioned classes before but now we will go into more detail. We stated that a class usually 
+describes a noun, for example, a dog. A class is like a blueprint. Having a blueprint for a 
+building can show us what the building should look like, what the building needs, what it can do, 
+but every building made using the same blueprint does not have to be exactly the same._ 
+
+Using the example of a dog, they can all look different, but they have the same characteristics 
+(four legs, paws, eyes, etc.) and similar behaviors (barking, sniffing, eating, etc.)_
+
+Classes are the general idea of something. The class of a dog has all of the general ideas 
+of a dog, but says nothing specific about any specific dog. Because classes are only an idea, 
+we say that we define a class whenever we make a new one._
+
+The purpose of a class is to layout the general idea so that the programmer can create more 
+specified objects._
+
+Objects of the same class all have access to the same methods in that class, so all objects 
+will have the same behaviors. Objects also have the same variables, but the value in each 
+variable stored can be different._
+
+A tall dog and a short dog will both have the same variable representing the height, but the value 
+in the variable will be specific for the height of the dog object. Despite the difference in the
+height of the dogs, they can still both bark and run (they have the same behaviors, or methods)._
+ 
+A class must first be defined to get the general idea. Then specific values can be stored into 
+each variable in the class to create an instance of the class, also known as an object._
+
+Because an object is a specific instance of a class, we say that we instantiate objects._
+ 
+To create a class, first decide what the class will represent. For example, a class can represent 
+a dog, an airplane, a ball, almost anything really. Then decide what the class must know and 
+what the class must be able to do. For example, with the dog example:_
+ 
+The class must know: 
+Tail length, fur length, height, weight, color, etc._
+
+The class must do: 
+Bark, Eat, Wag tail, sleep, etc._
+
+Now that we know what the class must know and must do, we can create the class. Then we can 
+assign specific values to the variables (tail length, fur length, etc.) and an instance of the 
+class, or an object, can be created._
+ 
+To create an object, there is a specific statement that we can use that looks like so:_
+
+ClassName objectName = new ClassName(Values for every variable);_
+
+Notice the syntax of the previous statements. The ClassName declares which class you are using 
+to create this object. The objectName, also known as the object reference, can be anything but 
+it should be obvious what kind of object it is._
+
+Use the “=” to assign a value into the object reference. The word new is a reserved word in Java 
+stating that a new object will be created. Notice how ClassName(Values for Variables) looks 
+like the syntax for a method call. That’s because this is actually a type of method called 
+a constructor._
+
+This is the method that is used to construct a new object of the class. The method name is the 
+same as the class name. Values should then be put for every parameter of this method, 
+and the object will be created with those values._
+ 
+Dog puppy = new Dog(short, short, 30, 10, black);_
+
+This statement creates a new object from the Dog class, and the object is called puppy. 
+It uses the Dog() constructor method to create a new object and the parameters states that 
+the puppy will have short tail length, short fur length, it will be 30cm tall, it will weight 10kg,
+and it will have black fur._
+
+The reference “puppy” can now be used to refer to this object._
+
+We can write as many of these statements as we want to create as many objects as we need. 
+As long as we keep the order of the parameters the same, and change the values, we can have many, 
+many, many different dogs!_
+
+Just remember not to use the same object reference for multiple dogs. 
+Having many dogs named “puppy” isn’t useful because if the object assigned to puppy is changed,
+there is no reference available for the first Dog we created and the object is destroyed by 
+Java Garbage Collection in order to save memory._
+ 
+Remember when we were talking about methods we would use the syntax:_
+
+objectName.methodName(parameters);_
+
+Now that we know what objects are, we can put this syntax to use. If we want “puppy” to bark, 
+we need the object referred to by “puppy” to run the method bark. To do this we can write:_
+
+puppy.bark();_
+
+*Note there are no parameters for the bark method so we do not put any values in the brackets.*_
+
+Now that we have created a Dog class, we need to differentiate between a concrete class 
+and the driver class. Classes that describe general ideas from which objects will be made are 
+called concrete classes._
+
+The driver class is a class that contains the main method (public static void main (String[]args))._
+
+The only method inside the driver class should be the main method. This driver class is where our 
+objects will be made and we can test them out to see if they work how we want them to. 
+There should only be 1 main method, or 1 driver class, in a single project._
+
+Also, objects will never be made in the driver class._
+ 
+Remember the naming for classes: They should always start with capital letters. 
+The driver class is also a class, so this rule still applies. The letters DRV are usually put 
+at the end of the class name to show it is a driver class._
+
+The driver class used to test Dog objects can be called DogDRV._
+
+So far, we have been using predefined classes such as String. Now we will learn to write our own 
+classes so we can create objects that are specific to what we need. First of all, remember about 
+methods._
+
+Method headers should have:_
+
+public returnType methodName(parameters)_
+
+There are 3 different types of methods that we use in our concrete classes.
+They are called:_
+
+Constructors, accessors and mutators._
+ 
+First we will go over constructors. We mentioned constructor methods before as we were 
+looking at the syntax for creating an object. Constructor methods are used during creating objects._
+They syntax for a constructors header looks like so:_
+
+public methodName(parameters);_
+
+Note that the methodName for a constructor must be the same as the name of the class. 
+Also note that instead of putting void for no return type, we simply skip the return type 
+altogether._
+
+Because the methodName is the same as the name for the class, the syntax for a constructor method
+header will look more like so:_
+
+public className(parameters);_
+
+The parameters for a constructor method should account for all of the variables for the class. 
+Going back to the Dog example, our variables were:_
+
+String tail length, String fur length, int height, int weight, and String color._
+
+In that case, the parameters for the constructor method should be the same data types, 
+in the same order. The names of the variables do not have to match those of the parameter._
+
+public	Dog(String tLength, String fLength, int h, int w, String col)_
+
+This can be written as the header for the constructor method of the Dog class._ 
+The body of the constructor method should take all of the parameters that the user will enter 
+when the object is created and store them into the variables of the class. For example:_
+
+public	Dog(String tLength, String fLength, int h, int w, String col)
+{
+	tailLength = tLength;
+	furLength = fLength;
+	height = h;
+	weight = w;
+	color = col;
+}_
+
+By doing so, the values that the user enters when the constructor method is called are 
+assigned to the instance variables of the class, and the object is created._
+
+Keep in mind that when the constructor method is called, the parameters have to be in the 
+correct order, every time._
+ 
+A good thing to know about constructors is that if you do not manually write your own 
+constructor method, Java automatically supplies a null constructor._
+
+This means a constructor method that sets all of the instance variables to null or 0._
+
+However, if you do write a constructor method, then Java will not supply you with one. 
+In this case, you should write your own null constructor so that you can create blank objects 
+just to test mutator or accessor methods._
+ 
+Now you might be thinking: if constructor methods must have the same name as the class, 
+but we should write 2 constructors, wouldn’t we have 2 methods that have the same name?_
+
+The reason this is acceptable is because the null constructor will not have any parameters, 
+while the normal constructor will._
+
+Even if 2 methods have the same name, if the parameters are different, it is acceptable.
+This is called overloading. Don’t name all of your methods “method” with a different parameter list
+though, overloading should only be used when 2 methods have similar functions but take in 
+different data types for the parameters._
+
+The next type of method is the accessor method. Accessor methods are usually very simple methods 
+that simply return the value of an instance variable. Because instance variables should be 
+declared as private in the class, they cannot simply be called. They must be called through a 
+method in the same class, and this method is called an accessor method._
+
+Writing accessor methods are very easy:_
+
+public returnType methodName()
+{
+	return instanceVariable;
+}_
+
+The return type will depend on the data type of the variable that this method is returning. 
+The name of the instance variable being returned must be used in the return statement as well._
+
+There is a convention to naming these accessor methods. If the name of the instance variable that 
+is being return is height, then the method will usually be named getHeight()._
+
+If the variable is name, the method can be named getName()._
+
+Because these methods are usually only very simple return statements, they do not need any 
+parameters in the brackets._
+ 
+The final type of method used in concrete classes is mutators. Mutator methods are used to simply 
+change the value of an instance variable. For example, if we have a black dog but we want to 
+change the color to gold, we can use a mutator method called setColor() or changeColor() to do so._
+
+The syntax for a mutator method header is:_
+
+public void methodName(parameters)_
+
+Mutator methods only change the value of a variable and therefore will never return anything. 
+This means that the return type will always be void. The methodName can be anything as long as
+it describes the function of the method._
+
+Finally, the parameters depend on what is needed for this method to run. In the case of the 
+setColor() method, the parameter can be another String col._
+
+The method will simply assign the new color from the parameters to the instance variable color. 
+A method that does this will look like so:_
+
+public void setColor(String col)
+{
+	color = col;
+}_
+
+Those are the 3 types of methods that are used in the declaration of a concrete class._
+
+END_

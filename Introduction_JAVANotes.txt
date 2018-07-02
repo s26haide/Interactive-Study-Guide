@@ -1,0 +1,52 @@
+﻿Introduction to Java
+
+Java is a very popular coding language because it is simple to learn and use. 
+Because of this, it is often used as a gateway to computer programming. 
+Although it is not the most practical language, people can learn the basics with Java and later move on 
+to more complicated languages as their understanding of computer programming deepens._
+
+Java is also platform-independent, meaning that if you write the code on a windows computer, you can still run it on 
+an apple computer. If the code is written on an apple computer, it can still be run on a Linux computer. 
+The platform of the computer does not interfere with Java code, so it is platform-independent._
+ 
+Everything in Java must be in a container. Containers must go from large – small. 
+Smaller containers must be inside larger containers._ 
+The largest container in Java is the class. A class usually is used to describe a complete concept, for example, 
+a student, an airplane, a car, etc._
+Classes have 2 parts: A header that names the class, and the body that is the container part of the class. 
+The body of the class contains all of the smaller containers. 
+The name of the class should always be capitalized to tell people that it is a class and the largest container._
+
+The medium-sized container in Java is the method.  A method holds a collection of statements that performs a process. 
+Method names should describe what the method does, usually verbs because an action is being done. 
+As methods are smaller than classes, they should go inside a class._
+
+There is a special method in Java called the main method. The main method is the method that Java looks for 
+to know what to do with a program. Every Java project can only have one main method, and the main method 
+can call other methods inside of it. The syntax for the main method is: public static void main (String []args)_
+ 
+Statements are the smallest container in Java. Statements go inside of methods. A statement will give a complete command. 
+A statement can tell other classes and methods what to do but must specify what the statement is talking about 
+with references. A statement will always end with a semicolon (;)._
+ 
+Statements are the smallest container and go inside a method, which is the medium-sized container. 
+Methods go inside classes which are the largest container. When all of these containers are used properly, 
+the result is a Java code._
+ 
+Comments are also used in Java code, but have no actual effects on the code itself. 
+Comments are written beside important statements, at the top of methods, and at the top of classes to explain 
+what these statements, methods, or classes do. Comments help people understand what the code you have written does. 
+Comments are not read by the computer, they are written for other people to read._
+ 
+Type “//” to indicate the start of a comment on a single line. Anything written after the “//” on the same line 
+will be a comment. This can be used to give information to anyone reading the program or can also be used to 
+temporarily disable a line of code without deleting it. For example, “//System.out.println()” will not run because 
+the code is written in a comment._
+
+If the comment you want to write will take multiple lines, it is inefficient to type “//” on multiple lines. 
+That is why multi-line comments exist. To write a multi-line comment, type “/* */”. The computer will automatically 
+create multiple lines of comments that you can type in. It will automatically add as many lines as you need. 
+Use this at the top of methods to explain what the method does or at the top of a class to give your 
+name, project, date, and what the class does._ 
+
+END_

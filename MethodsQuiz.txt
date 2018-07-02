@@ -1,0 +1,168 @@
+﻿1. Code that uses methods to perform tasks instead of a single long main method is called:
+
+A) modular programming
+B) methodular programming
+C) methodical programming
+D) object oriented programming_
+
+A_
+
+2. Modular programming means to break the problem up into many smaller parts and solve the parts individually
+and putting the solutions in classes.
+
+A) True
+B) False_
+
+B_
+
+3. An example of a method we know: the main method. The proper syntax for this method is:
+
+A) public void main (String []args)
+B) public final void main (String []args)
+C) public static void main (String []args)
+D) public static void main (Int [] args)_
+
+C_
+
+4. The word public is a:
+
+A) visibility modifier
+B) public modifier
+C) reserved word in Java
+D) A & C_
+
+D_
+
+5. A method header consists of the following: the visibility modifier, other method modifiers, the return type,
+the method name and finally, the parameters.
+
+A) True
+B) False_
+
+A_
+
+6. The return type tells the method what data type it will print after completing the method.
+
+A) True
+B) False_
+
+B_
+
+7. The method name should describe the purpose of the method efficiently.
+
+A) True
+B) False_
+
+A_
+
+8. Method names should:
+
+A) Start with an upper case letter and use underscores between words
+B) Start with a lower case letter and use upper case letters for different words
+C) Have at least one number in them
+D) B & C_
+
+B_
+
+9. Parameters are:
+
+A) Put inside brackets after the method name
+B) Not necessary for all methods
+C) Variables that the method needs to run.
+D) A & C_
+
+D_
+
+10. The proper syntax for calling a non-static method is:
+ClassName.MethodName(Parameters)
+
+A) True
+B) False_
+
+B_
+
+11. The proper syntax for calling a non-static method is:
+ObjectName.MethodName(Parameters)
+
+A) True
+B) False_
+
+A_
+
+12. The proper syntax for calling a static method is:
+ObjectName.MethodName(Parameters)
+
+A) True
+B) False_
+
+B_
+
+13. The proper syntax for calling a static method is:
+MethodName(ClassName)
+
+A) True
+B) False_
+
+B_
+
+14. The proper syntax for calling a static method is:
+ClassName.MethodName(Parameters)
+
+A) True
+B) False_
+
+A_
+
+15. What are the 2 general types of methods?
+
+A) Modular and Methodical
+B) Function and Linear
+C) Procedure and Analystic
+D) Procedure and Function_
+
+D_
+
+16. Procedures are methods that "    "; Functions are methods that "    ";
+
+A) Return a value; Do not return a value
+B) Go in sequence; Have iterations
+C) Do not return a value; Return a value
+D) Are hand written; Draw graphics_
+
+C_
+
+17. The scope of a variable refers to:
+
+A) How close the variable gets you to the right answer
+B) Where in the code you can use that variable
+C) The number of characters in the variables name
+D) The value of the variable_
+
+B_
+
+18. Variables initialized inside a method are called:
+
+A) Local variables
+B) Methodical variables
+C) Modular variables
+D) Instance variables_
+
+A_
+
+19. After the method call is complete, local variables are:
+
+A) Saved in local memory
+B) Destroyed
+C) Printed
+D) Returned_
+
+B_
+
+20. Which of the following is NOT a method of the String class?
+
+A) indexOf(char c)
+B) equalsIgnoreCase(String s)
+C) length()
+D) capitalize()_
+
+D

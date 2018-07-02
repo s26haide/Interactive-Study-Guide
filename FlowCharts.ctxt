@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FlowCharts()
+comment0.text=\r\n\ Null\ constructor\r\n\ Sets\ both\ instance\ variables\ to\ null\ \r\n\ Used\ to\ create\ null\ objects\ to\ test\ methods\r\n
+comment1.params=NFileIn\ QFileIn
+comment1.target=FlowCharts(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Real\ constructor\r\n\ Sets\ both\ instance\ variables\ to\ the\ Strings\ put\ as\ the\ parameters\r\n\ Objects\ of\ this\ class\ have\ the\ respective\ file\ names\ used\ in\ the\ readNotes\ and\ DoQuiz\ methodd\r\n
+comment2.params=
+comment2.target=void\ PlayGame()
+numComments=3

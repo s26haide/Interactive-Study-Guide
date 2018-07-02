@@ -1,0 +1,19 @@
+﻿Pseudo-code
+
+Pseudo- means imitation, code refers to the actual computer code. Therefore, pseudo-code means an imitation of computer code.
+Pseudo-code is computer code that has been translated into English to show how the program should function._
+For example, if pseudo-code is to be written for checking which of 2 numbers is greater, it would look like this:_
+If(A>B)
+	THEN Print “A is greater”;
+	ELSE Print “B is greater”;
+ENDIF ;_
+By using pseudo-code, we are able to figure out how the program should work before we add all of the confusing code to it. 
+It is a basic outline for how our program will work._ 
+Iteration, also known as loops, can also be written in pseudo-code like so:_
+While(condition)
+	DO <Statements if condition is true>;
+ENDWHILE;_
+Always write a pseudo-code before you start coding any project so you will have a clear idea of what you need to do.
+If you get confused or lost while writing your code, refer to your pseudo-code to see what needs to be done and get back on track.
+
+END_

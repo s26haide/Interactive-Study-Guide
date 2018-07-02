@@ -1,0 +1,19 @@
+﻿Nested Loops
+
+Similar to nested if statements, nested loops are also available for use in Java. 
+This means that a loop can have another loop inside. This works for any of the types of loops. 
+Every time the outer loop runs once, the inner loop runs fully._
+
+For example:_
+
+For(int I = 0; I < 3; i++)
+{
+	For(int j = 0; j < 5; j++)
+}_
+
+The outer for loop will run a total of 3 times. Every time the outer loop runs, the inner 
+loop will run fully. In this case, it will run 5 times. In total, the outer loop will run 3 
+times and the inner loop will run 5X3 times, for a total of 15 times. This is often useful 
+when working with arrays._ 
+
+END_

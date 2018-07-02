@@ -1,0 +1,223 @@
+﻿1. An array is a(n) "    " of the "     " class.
+
+A) Variable; main
+B) Object; Util
+C) Object; Array
+D) Reference; Object_
+
+C_
+
+2. Arrays are used to store multiple different variables of similar type.
+
+A) True
+B) False_
+
+A_
+
+3. Which is the proper syntax to create an Array of int with a length of 20?
+
+A) Array[int] num = new Array[int](20);
+B) int[] num = new int(20);
+C) Integer.createArray(20);
+D) Array num = new Array(20);_
+
+B_
+
+4. Which of these statements would get the 11th number in the array?
+
+A) num.get(11);
+B) num.get(10);
+C) num[11];
+D) num[10];_
+
+D_
+
+5. Which of these statements would get the number stored in the 15th index of an array?
+
+A) num.get(15);
+B) num.get(16);
+C) num[15];
+D) num[16];_
+
+C_
+
+6. What is the default value for an empty index in an array of char variables?
+
+A) 0
+B) False
+C) null
+D) 'A'_
+
+C_
+
+7. Which is the proper syntax for assigning a value to an index?
+
+A) num[5] = 10;
+B) num(5) = 10;
+C) num.setValue(5, 10);
+D) num.setIndex(5, 10);_
+
+A_
+
+8. An index of an array of int can be used in the place of where any other integer would be used.
+
+A) True
+B) False_
+
+A_
+
+9. Which of the following is one of the disadvantages of an array?
+
+A) They take too much space in computer memory
+B) They are difficult to manage
+C) The size of an array cannot be changed after it is created
+D) A & C_
+
+C_
+
+10. Which of the following is the proper syntax for finding the length of an array?
+
+A) array.length;
+B) array.getLength()
+C) array.length();
+D) array.length(10);_
+
+A_
+
+11. What is the length of the following array that has been initialized like so:
+int[] array = new int[10];
+
+A) 10
+B) 9
+C) 11
+D) 0_
+
+A_
+
+12. Which of the following will get the last index of an array?
+
+A) array[last]
+B) array[array]
+C) array[array.length]
+D) array[array.length-1]_
+
+D_
+
+13. Which of the following is the proper format for explicit array declaration and initialization?
+
+A) int[] nums = new int[1, 2, 3, 4, 5];
+B) int[] nums = new int(1, 2, 3, 4, 5);
+C) int[] nums = {1, 2, 3, 4, 5};
+D) int[] nums = new int{1, 2, 3, 4, 5};_
+
+C_
+
+14. What will the following code output?
+for(int i = 0; i < numbers.length; i++)
+{
+	System.out.println(numbers[i]);
+}
+
+A) It will infinite loop
+B) It will print all of the numbers in the array
+C) It will crash because it goes outside of the array
+D) It will not print anything_
+
+B_
+
+15. Multiple objects, regardless of the class they are made from, can be saved inside a single array.
+
+A) True
+B) False_
+
+B_
+
+16. Which of the following will correctly create an array of objects?
+
+A) Things[] objArray = new Things[10]; //Assume Things is a correctly written class
+B) Object[] objArray = new Object[10];
+C) A & B
+D) int[] objArray = new Integer[10];_
+
+C_
+
+17. What happens if you attempt to access an index outside of the array?
+
+A) Nothing will happen, the program will continue to run
+B) It will take the default value of the data type of the array
+C) It will overflow the array and take the value that fits
+D) It will cause the program to crash and say ArrayOutOfBounds_
+
+D_
+
+18. What must you first do before using an ArrayList in your program?
+
+A) Create an ArrayList object
+B) import the ArrayList Class
+C) Write the ArrayList Class
+D) You can automatically use an ArrayList_
+
+B_
+
+19. What is the statement to import the ArrayList class?
+
+A) import java.util.ArrayList;
+B) import java.Array.ArrayList;
+C) import java.io.ArrayList;
+D) import java.ArrayList;_
+
+A_
+
+20. The proper syntax for creating an ArrayList object looks like so:
+
+A) ArrayList numbers = new ArrayList();
+B) ArrayList[] numbers = new ArrayList();
+C) ArrayList<Integer> numbers = new ArrayList();
+D) ArrayList<Integer> numbers = new ArrayList<Integer>();_
+
+D_
+
+21. Why do we not need to specify the size of an ArrayList when we create it?
+
+A) ArrayLists are infinitely large 
+B) ArrayLists adjust their size to the amount of data put into it
+C) You have to specify the size of an ArrayList when creating it
+D) A & C_
+
+B_
+
+22. Which of the following are methods of ArrayList?
+
+A) add()
+B) length()
+C) size()
+D) A & C_
+
+D_
+
+23. When you insert data in the middle of an ArrayList using the add method:
+
+A) The pre-existing data inside the ArrayList is shifted down to make space for it
+B) The pre-existing data inside the ArrayList is unaffected
+C) The object in the place of the new inserted data is deleted
+D) None of the above_
+
+A_
+
+24. Which method of ArrayList is often used to control a loop?
+
+A) add()
+B) get()
+C) size()
+D) remove()_
+
+C_
+
+25. When you delete data in the middle of an ArrayList using the remove method:
+
+A) The pre-existing data inside the ArrayList is shifted up to fill the space
+B) The pre-existing data inside the ArrayList is unaffected
+C) The deleted index will have a null value
+D) None of the above_
+
+A

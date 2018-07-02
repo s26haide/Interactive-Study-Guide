@@ -1,0 +1,155 @@
+﻿1. Which of the following are features of object-oriented programming langauges?
+
+A) It is easy to write large and complex programs
+B) It allows for code reusability
+C) Editing existing code is very easy to do
+D) All of the above_
+
+D_
+
+2. A class is best described as a:
+
+A) Map
+B) Blueprint
+C) Planner
+D) Shelf_
+
+B_
+
+3. A class tells us:
+
+A) What characteristics the object will have
+B) What the object can do
+C) All of the above
+D) The exact shape of the object_
+
+C_
+
+4. When we create a new class, we use the word:
+
+A) Define
+B) Instantiate
+C) Initialize
+D) Declare_
+
+A_
+
+5. Objects of a class have access to:
+
+A) All methods written in the class
+B) All variables declared in the class
+C) All comments written in the class
+D) A & B_
+
+D_
+
+6. 2 objects of the same class have the same:
+
+A) Name
+B) Variable names but different values in the variable
+C) Method names but different definitions of the methods
+D) Space in memory_
+
+B_
+
+7. An object of a class is also called an:
+
+A) Instance of the class
+B) Article of the class
+C) Target of the class
+D) Item of the class_
+
+A_
+
+8. When we create a new object, we use the word:
+
+A) Objectify
+B) Creation
+C) Instantiate
+D) Declare_
+
+C_
+
+9. The syntax for the instantiation of an object looks like so:
+ClassName objectName = new ClassName(Parameters of constructor);
+
+A) True
+B) False_
+
+A_
+
+10. If the same name (reference) is used to point to multiple objects,
+what happens?
+
+A) A copy of each object is made with a different reference
+B) The multiple objects will all have the same name
+C) The program will crash
+D) The objects with no reference are destroyed by the Java Garbage Collection_
+
+D_
+
+11. The class containing the main method is called the:
+
+A) Main Class
+B) Driver Class
+C) Main Method Class
+D) Args Class_
+
+B_
+
+12. Which of the following are types of methods used in concrete classes?
+
+A) Constructors
+B) Transformers
+C) A & B
+D) Returners_
+
+A_
+
+13. The following method header is for which type of method?
+public Dog()
+{
+	statements
+}
+
+A) Accessors
+B) Mutators
+C) Class
+D) Constructors_
+
+D_
+
+14. The following method header is for which type of method?
+public Scanner getScan()
+{
+	statements
+}
+
+A) Accessors
+B) Mutators
+C) Class
+D) Constructors_
+
+A_
+
+15. The following method header is for which type of method?
+public void setName()
+{
+	statements
+}
+
+A) Accessors
+B) Mutators
+C) Class
+D) Constructors_
+
+B_
+
+16. What is it called when 2 methods have the same name but different parameters?
+
+A) Overwriting
+B) Overriding
+C) Overloading
+D) Overnaming_
+
+C

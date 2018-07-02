@@ -1,0 +1,56 @@
+﻿1. Pseudo- means:
+
+A) Wrong
+B) Imitation
+C) English
+D) Computer code_
+
+B_
+
+2. Pseudocode is:
+
+A) Computer code that does not work
+B) Computer code that is written in the programming language Pseudo
+C) Computer code that is translated into English
+D) A type of flowchart_
+
+C_
+
+3. Pseudocode is written to plan out how the real program will flow
+
+A) True
+B) False_
+
+A_
+
+4. The following is properly formatted pseudocode.
+
+If(A>B)
+	THEN Print "A is greater";
+	ELSE Print "B is greater";
+ENDIF;
+
+A) True
+B) False_
+
+A_
+
+5. The following is the proper format for iterations in pseudocode.
+
+Loop(condition)
+	DO <Statements if condition is false>;
+ENDLOOP;
+
+A) True
+B) False_
+
+B_
+
+6. Pseudocode is:
+
+A) Something you can reference if you get confused while coding
+B) Important to write to get the basic ideas of the program down on paper
+C) A basic outline for how the program will work
+D) All of the above_
+
+D
